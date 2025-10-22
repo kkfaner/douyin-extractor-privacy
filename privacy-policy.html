@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 - 抖音主页视频无水印提取器 | Privacy Policy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.8;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #fe2c55 0%, #ff6b6b 100%);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .header .subtitle {
+      font-size: 18px;
+      opacity: 0.95;
+      margin-bottom: 15px;
+    }
+
+    .header .update-date {
+      font-size: 14px;
+      opacity: 0.85;
+      background: rgba(255, 255, 255, 0.2);
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 20px;
+      margin-top: 10px;
+    }
+
+    .content {
+      padding: 40px 30px;
+    }
+
+    .language-toggle {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .language-toggle button {
+      background: #fe2c55;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      margin: 0 5px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .language-toggle button:hover {
+      background: #e62a4d;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(254, 44, 85, 0.3);
+    }
+
+    .language-toggle button.active {
+      background: #333;
+    }
+
+    .language-section {
+      display: none;
+    }
+
+    .language-section.active {
+      display: block;
+      animation: fadeIn 0.5s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #fe2c55;
+      font-size: 24px;
+      margin-bottom: 25px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #fe2c55;
+    }
+
+    h3 {
+      color: #333;
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    h3::before {
+      content: "▸";
+      color: #fe2c55;
+      font-weight: bold;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    p, li {
+      margin-bottom: 15px;
+      color: #555;
+      font-size: 15px;
+    }
+
+    ul {
+      margin-left: 25px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 5px;
+    }
+
+    .highlight {
+      background: #fff3cd;
+      padding: 20px;
+      border-left: 4px solid #ffc107;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .contact-box h3 {
+      color: white;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .contact-box h3::before {
+      color: white;
+    }
+
+    .contact-box p {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .wechat-id {
+      background: rgba(255, 255, 255, 0.2);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .footer a {
+      color: #fe2c55;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      .header {
+        padding: 30px 20px;
+      }
+
+      .header h1 {
+        font-size: 22px;
+      }
+
+      .header .subtitle {
+        font-size: 16px;
+      }
+
+      .content {
+        padding: 30px 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎬 抖音主页视频无水印提取器</h1>
+      <div class="subtitle">Douyin Video Watermark-Free Extractor</div>
+      <div class="update-date">📅 最后更新 Last Updated: 2025年10月 October 2025</div>
+    </div>
+
+    <div class="content">
+      <div class="language-toggle">
+        <button class="active" onclick="switchLanguage('zh')">中文 🇨🇳</button>
+        <button onclick="switchLanguage('en')">English 🇺🇸</button>
+      </div>
+
+      <!-- 中文版本 -->
+      <div id="zh" class="language-section active">
+        <h2>隐私政策</h2>
+
+        <p>感谢您使用「抖音主页视频无水印提取器」Chrome扩展程序（以下简称"本扩展"）。我们非常重视您的隐私保护，本隐私政策将向您说明本扩展如何收集、使用和保护您的信息。</p>
+
+        <div class="highlight">
+          <strong>⚡ 核心承诺：</strong>本扩展不收集、不存储、不上传任何用户个人隐私信息。所有数据处理均在您的本地浏览器中完成。
+        </div>
+
+        <h3>1. 数据收集</h3>
+        <p>本扩展仅在以下情况下读取数据：</p>
+        <ul>
+          <li><strong>仅在用户主动操作时</strong>：当您点击扩展图标、悬浮按钮或右键菜单时，扩展才会读取抖音用户主页上的公开视频信息</li>
+          <li><strong>仅读取公开内容</strong>：视频链接、视频标题、视频封面图等公开显示的信息</li>
+          <li><strong>不收集个人信息</strong>：不收集您的抖音账号、密码、手机号、身份信息或任何私密数据</li>
+          <li><strong>不追踪浏览行为</strong>：不记录您的浏览历史或访问记录</li>
+        </ul>
+
+        <h3>2. 数据使用</h3>
+        <ul>
+          <li><strong>本地处理</strong>：所有视频信息的提取、展示和处理均在您的本地浏览器中完成</li>
+          <li><strong>第三方API调用</strong>：当您点击"去水印"按钮时，扩展会将视频链接发送到第三方公开的视频解析服务（api.7a.ink、api.douyin.wtf）以获取无水印下载地址</li>
+          <li><strong>不上传到开发者服务器</strong>：本扩展没有自己的服务器，不会将任何数据上传到开发者</li>
+          <li><strong>单一用途</strong>：数据仅用于提取和展示视频信息，不用于任何其他目的</li>
+        </ul>
+
+        <h3>3. 数据存储</h3>
+        <ul>
+          <li><strong>仅存储配置选项</strong>：本扩展使用Chrome的本地存储（localStorage）仅保存您的界面配置选项，例如是否显示首次使用提示</li>
+          <li><strong>不存储视频数据</strong>：不保存您提取的视频链接、标题或封面图</li>
+          <li><strong>您可随时清除</strong>：卸载扩展后，所有本地存储的配置数据将自动清除</li>
+        </ul>
+
+        <h3>4. 第三方服务</h3>
+        <p>本扩展调用的第三方视频解析API为公开服务，仅用于解析无水印视频下载链接。这些服务的隐私政策由其服务提供方制定，我们不对第三方服务的数据处理行为负责。</p>
+        <ul>
+          <li>api.7a.ink - 视频解析服务</li>
+          <li>api.douyin.wtf - 视频解析服务（备用）</li>
+        </ul>
+
+        <h3>5. 权限说明</h3>
+        <p>本扩展申请的权限及用途：</p>
+        <ul>
+          <li><strong>storage</strong>：保存用户配置选项</li>
+          <li><strong>contextMenus</strong>：在抖音页面上添加右键菜单快捷方式</li>
+          <li><strong>activeTab</strong>：读取当前标签页的视频信息（仅在用户主动操作时）</li>
+          <li><strong>clipboardWrite</strong>：实现"复制链接"功能</li>
+          <li><strong>downloads</strong>：下载无水印视频到本地</li>
+          <li><strong>douyin.com</strong>：在抖音网站上显示悬浮窗口并提取视频信息</li>
+        </ul>
+
+        <h3>6. 数据安全</h3>
+        <p>我们郑重承诺：</p>
+        <ul>
+          <li>❌ 不会出售您的任何数据给第三方</li>
+          <li>❌ 不会交易或转移您的数据</li>
+          <li>❌ 不会将数据用于广告或营销目的</li>
+          <li>❌ 不会将数据用于信用评估或贷款</li>
+          <li>✅ 所有数据处理遵循单一用途原则</li>
+        </ul>
+
+        <h3>7. 儿童隐私</h3>
+        <p>本扩展不会故意收集13岁以下儿童的个人信息。如果您认为我们可能无意中收集了儿童的信息，请立即联系我们。</p>
+
+        <h3>8. 隐私政策更新</h3>
+        <p>我们可能会不定期更新本隐私政策。更新后的政策将在此页面发布，重大变更会在扩展中通知用户。</p>
+
+        <h3>9. 用户权利</h3>
+        <p>您有权：</p>
+        <ul>
+          <li>随时停止使用本扩展</li>
+          <li>随时卸载本扩展</li>
+          <li>清除本扩展存储的所有本地数据</li>
+          <li>向我们询问关于数据处理的任何问题</li>
+        </ul>
+
+        <div class="contact-box">
+          <h3>📮 联系我们</h3>
+          <p>如有任何问题、建议或投诉，请通过以下方式联系开发者：</p>
+          <div class="wechat-id">💬 微信号: 8751148</div>
+        </div>
+      </div>
+
+      <!-- English Version -->
+      <div id="en" class="language-section">
+        <h2>Privacy Policy</h2>
+
+        <p>Thank you for using the "Douyin Video Watermark-Free Extractor" Chrome extension (hereinafter referred to as "this extension"). We highly value your privacy protection. This privacy policy explains how this extension collects, uses, and protects your information.</p>
+
+        <div class="highlight">
+          <strong>⚡ Core Commitment:</strong> This extension does not collect, store, or upload any user personal privacy information. All data processing is completed in your local browser.
+        </div>
+
+        <h3>1. Data Collection</h3>
+        <p>This extension only reads data in the following situations:</p>
+        <ul>
+          <li><strong>Only when users actively operate</strong>: When you click the extension icon, floating button, or context menu, the extension will read public video information on the Douyin user page</li>
+          <li><strong>Only read public content</strong>: Video links, video titles, video thumbnails, and other publicly displayed information</li>
+          <li><strong>No personal information collected</strong>: Does not collect your Douyin account, password, phone number, identity information, or any private data</li>
+          <li><strong>No browsing behavior tracking</strong>: Does not record your browsing history or access records</li>
+        </ul>
+
+        <h3>2. Data Usage</h3>
+        <ul>
+          <li><strong>Local processing</strong>: All video information extraction, display, and processing are completed in your local browser</li>
+          <li><strong>Third-party API calls</strong>: When you click the "Remove Watermark" button, the extension sends the video link to third-party public video parsing services (api.7a.ink, api.douyin.wtf) to obtain watermark-free download addresses</li>
+          <li><strong>Not uploaded to developer servers</strong>: This extension does not have its own server and will not upload any data to the developer</li>
+          <li><strong>Single purpose</strong>: Data is only used to extract and display video information, not for any other purpose</li>
+        </ul>
+
+        <h3>3. Data Storage</h3>
+        <ul>
+          <li><strong>Only store configuration options</strong>: This extension uses Chrome's local storage (localStorage) to save only your interface configuration options, such as whether to display first-time usage prompts</li>
+          <li><strong>No video data stored</strong>: Does not save the video links, titles, or thumbnails you extracted</li>
+          <li><strong>You can clear at any time</strong>: After uninstalling the extension, all locally stored configuration data will be automatically cleared</li>
+        </ul>
+
+        <h3>4. Third-Party Services</h3>
+        <p>The third-party video parsing APIs called by this extension are public services, only used to parse watermark-free video download links. The privacy policies of these services are established by their service providers, and we are not responsible for the data processing behavior of third-party services.</p>
+        <ul>
+          <li>api.7a.ink - Video parsing service</li>
+          <li>api.douyin.wtf - Video parsing service (backup)</li>
+        </ul>
+
+        <h3>5. Permissions Explanation</h3>
+        <p>Permissions requested by this extension and their purposes:</p>
+        <ul>
+          <li><strong>storage</strong>: Save user configuration options</li>
+          <li><strong>contextMenus</strong>: Add context menu shortcuts on Douyin pages</li>
+          <li><strong>activeTab</strong>: Read video information from the current tab (only when users actively operate)</li>
+          <li><strong>clipboardWrite</strong>: Implement the "copy link" function</li>
+          <li><strong>downloads</strong>: Download watermark-free videos to local</li>
+          <li><strong>douyin.com</strong>: Display floating windows on Douyin websites and extract video information</li>
+        </ul>
+
+        <h3>6. Data Security</h3>
+        <p>We solemnly promise:</p>
+        <ul>
+          <li>❌ Will not sell any of your data to third parties</li>
+          <li>❌ Will not trade or transfer your data</li>
+          <li>❌ Will not use data for advertising or marketing purposes</li>
+          <li>❌ Will not use data for credit assessment or loans</li>
+          <li>✅ All data processing follows the single-purpose principle</li>
+        </ul>
+
+        <h3>7. Children's Privacy</h3>
+        <p>This extension will not knowingly collect personal information from children under 13. If you believe we may have inadvertently collected information from children, please contact us immediately.</p>
+
+        <h3>8. Privacy Policy Updates</h3>
+        <p>We may update this privacy policy from time to time. The updated policy will be published on this page, and significant changes will be notified to users in the extension.</p>
+
+        <h3>9. User Rights</h3>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Stop using this extension at any time</li>
+          <li>Uninstall this extension at any time</li>
+          <li>Clear all local data stored by this extension</li>
+          <li>Ask us any questions about data processing</li>
+        </ul>
+
+        <div class="contact-box">
+          <h3>📮 Contact Us</h3>
+          <p>If you have any questions, suggestions, or complaints, please contact the developer through:</p>
+          <div class="wechat-id">💬 WeChat ID: 8751148</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 抖音主页视频无水印提取器 | Douyin Video Watermark-Free Extractor</p>
+      <p>本扩展为个人开发项目，与抖音官方无关 | This extension is an independent project and is not affiliated with Douyin</p>
+    </div>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      // 隐藏所有语言版本
+      document.querySelectorAll('.language-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      
+      // 显示选中的语言版本
+      document.getElementById(lang).classList.add('active');
+      
+      // 更新按钮状态
+      document.querySelectorAll('.language-toggle button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
