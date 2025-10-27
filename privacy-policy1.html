@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私权政策 - 高对比度模式 | Privacy Policy - High Contrast Mode</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .header .version {
+            margin-top: 20px;
+            font-size: 0.9em;
+            opacity: 0.85;
+            padding: 8px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .intro {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 25px 30px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            font-size: 1.05em;
+            line-height: 1.9;
+        }
+
+        .intro strong {
+            color: #667eea;
+            font-size: 1.1em;
+        }
+
+        .section {
+            margin-bottom: 45px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+        }
+
+        .section h2 .icon {
+            margin-right: 12px;
+            font-size: 1.1em;
+        }
+
+        .section h3 {
+            color: #555;
+            font-size: 1.3em;
+            margin: 25px 0 15px;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section ul, .section ol {
+            margin: 15px 0 15px 25px;
+        }
+
+        .section li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+        }
+
+        .highlight-box {
+            background: #e8f4f8;
+            border-left: 4px solid #4CAF50;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        .highlight-box.warning {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+        }
+
+        .highlight-box.info {
+            background: #e7f3ff;
+            border-left-color: #2196F3;
+        }
+
+        .highlight-box h4 {
+            color: #4CAF50;
+            margin-bottom: 12px;
+            font-size: 1.15em;
+        }
+
+        .highlight-box.warning h4 {
+            color: #f57c00;
+        }
+
+        .highlight-box.info h4 {
+            color: #1976D2;
+        }
+
+        .permissions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .permissions-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .permissions-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .permissions-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .permissions-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .check-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .check-list li {
+            padding: 12px 15px 12px 40px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            position: relative;
+        }
+
+        .check-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 15px;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .x-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .x-list li {
+            padding: 12px 15px 12px 40px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            position: relative;
+        }
+
+        .x-list li:before {
+            content: '✗';
+            position: absolute;
+            left: 15px;
+            color: #f44336;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            background: #4CAF50;
+            color: #fff;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .badge.danger {
+            background: #f44336;
+        }
+
+        .badge.info {
+            background: #2196F3;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 40px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.4em;
+            }
+
+            .permissions-table {
+                font-size: 0.9em;
+            }
+
+            .permissions-table th,
+            .permissions-table td {
+                padding: 10px;
+            }
+        }
+
+        .toc {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px 30px;
+            margin-bottom: 40px;
+        }
+
+        .toc h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .toc li {
+            margin-bottom: 10px;
+            padding-left: 0;
+        }
+
+        .toc a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: #667eea;
+        }
+
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: #fff;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 5px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .lang-btn {
+            padding: 8px 20px;
+            border: none;
+            background: transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #666;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            background: #f0f0f0;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+        }
+
+        /* 隐藏非当前语言的内容 */
+        [data-lang]:not([data-lang=""]) {
+            display: none;
+        }
+
+        body[data-current-lang="zh"] [data-lang="zh"],
+        body[data-current-lang="en"] [data-lang="en"] {
+            display: block;
+        }
+
+        body[data-current-lang="zh"] [data-lang="zh"].inline,
+        body[data-current-lang="en"] [data-lang="en"].inline {
+            display: inline;
+        }
+
+        @media (max-width: 768px) {
+            .lang-switcher {
+                top: 10px;
+                right: 10px;
+                padding: 3px;
+            }
+
+            .lang-btn {
+                padding: 6px 15px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body data-current-lang="zh">
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <h1>🔒 隐私权政策</h1>
+            <p class="subtitle">高对比度模式 Chrome 扩展</p>
+            <div class="version">版本 1.2.2 | 最后更新：2025年10月27日</div>
+        </div>
+
+        <!-- 内容区 -->
+        <div class="content">
+            <!-- 引言 -->
+            <div class="intro">
+                <strong>您的隐私对我们至关重要。</strong><br>
+                本隐私政策说明了"高对比度模式"Chrome扩展如何处理用户数据。我们承诺保护您的隐私，本扩展不会收集、存储或传输任何个人信息或浏览数据。所有设置和配置均保存在您的本地浏览器中。
+            </div>
+
+            <!-- 目录 -->
+            <div class="toc">
+                <h3>📑 目录</h3>
+                <ul>
+                    <li><a href="#section1">1. 扩展功能概述</a></li>
+                    <li><a href="#section2">2. 数据收集与使用</a></li>
+                    <li><a href="#section3">3. 权限说明</a></li>
+                    <li><a href="#section4">4. 数据存储</a></li>
+                    <li><a href="#section5">5. 第三方服务</a></li>
+                    <li><a href="#section6">6. 数据安全</a></li>
+                    <li><a href="#section7">7. 用户权利</a></li>
+                    <li><a href="#section8">8. 政策更新</a></li>
+                    <li><a href="#section9">9. 联系方式</a></li>
+                </ul>
+            </div>
+
+            <!-- 第1节 -->
+            <div class="section" id="section1">
+                <h2><span class="icon">🎯</span>1. 扩展功能概述</h2>
+                <p>"高对比度模式"是一款专为改善网页视觉体验而设计的Chrome浏览器扩展，主要面向视力障碍用户、色盲用户以及需要长时间阅读的用户。</p>
+                
+                <h3>主要功能：</h3>
+                <ul>
+                    <li><strong>12种预设视觉模式：</strong>增强对比度、灰度、反转颜色、黑底黄字、夜间护眼模式、红绿色盲优化、蓝黄色盲优化、高亮模式、柔和模式等</li>
+                    <li><strong>自定义滤镜调整：</strong>提供8个可调参数（对比度、亮度、饱和度、灰度、反转、色相旋转、棕褐色、模糊）</li>
+                    <li><strong>网站独立配置：</strong>为不同网站保存独立的视觉设置</li>
+                    <li><strong>快捷键支持：</strong>通过键盘快捷键（Ctrl+Shift+H / Command+Shift+H）快速切换模式</li>
+                    <li><strong>全局应用：</strong>可选择将设置应用到所有打开的标签页</li>
+                    <li><strong>配置管理：</strong>支持导出和导入配置文件</li>
+                </ul>
+            </div>
+
+            <!-- 第2节 -->
+            <div class="section" id="section2">
+                <h2><span class="icon">🛡️</span>2. 数据收集与使用</h2>
+                
+                <div class="highlight-box">
+                    <h4>✓ 我们的承诺</h4>
+                    <p><strong>本扩展不收集任何用户数据。</strong>我们不会访问、记录或传输您的浏览历史、个人信息、网页内容或任何其他数据。</p>
+                </div>
+
+                <h3>我们不会收集：</h3>
+                <ul class="x-list">
+                    <li>浏览历史记录</li>
+                    <li>个人身份信息（姓名、邮箱、地址等）</li>
+                    <li>网页内容或用户输入</li>
+                    <li>cookies 或追踪数据</li>
+                    <li>IP 地址或地理位置</li>
+                    <li>设备信息或浏览器指纹</li>
+                    <li>任何形式的统计或分析数据</li>
+                </ul>
+
+                <h3>本地存储的数据：</h3>
+                <p>扩展仅在您的本地浏览器中存储以下配置数据，这些数据永远不会离开您的设备：</p>
+                <ul>
+                    <li>当前选择的视觉模式</li>
+                    <li>自定义滤镜参数设置</li>
+                    <li>各网站的独立配置</li>
+                    <li>用户偏好设置（如是否记住网站设置、是否全局应用）</li>
+                </ul>
+            </div>
+
+            <!-- 第3节 -->
+            <div class="section" id="section3">
+                <h2><span class="icon">🔑</span>3. 权限说明</h2>
+                <p>为了实现其功能，本扩展需要以下权限。我们在此详细说明每项权限的用途：</p>
+
+                <table class="permissions-table">
+                    <thead>
+                        <tr>
+                            <th>权限名称</th>
+                            <th>使用目的</th>
+                            <th>数据处理</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>storage</strong></td>
+                            <td>保存用户的视觉模式设置和自定义参数</td>
+                            <td>仅本地存储，不上传</td>
+                        </tr>
+                        <tr>
+                            <td><strong>commands</strong></td>
+                            <td>启用键盘快捷键功能</td>
+                            <td>无数据收集</td>
+                        </tr>
+                        <tr>
+                            <td><strong>&lt;all_urls&gt;</strong><br><small>(访问所有网站)</small></td>
+                            <td>向网页注入CSS样式以应用视觉效果</td>
+                            <td>仅修改CSS样式，不读取内容</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight-box info">
+                    <h4>📌 关于"访问所有网站"权限的说明</h4>
+                    <p>本扩展需要访问所有网站的权限，原因是：</p>
+                    <ol>
+                        <li><strong>核心功能需求：</strong>扩展需要向网页注入内容脚本来修改CSS样式，这是实现视觉辅助效果的唯一方式</li>
+                        <li><strong>通用性要求：</strong>用户可能在任何网站上需要视觉辅助，无法预先限定特定网站</li>
+                        <li><strong>隐私保护：</strong>虽然有访问权限，但扩展仅修改页面的视觉样式，不读取、存储或传输任何网页内容</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- 第4节 -->
+            <div class="section" id="section4">
+                <h2><span class="icon">💾</span>4. 数据存储</h2>
+                
+                <h3>存储位置</h3>
+                <p>所有用户设置通过 Chrome 的 <code>chrome.storage.sync</code> API 存储，这意味着：</p>
+                <ul class="check-list">
+                    <li>数据存储在您的本地浏览器中</li>
+                    <li>如果您启用了 Chrome 同步功能，设置会在您的设备间同步（由 Google 处理，非本扩展）</li>
+                    <li>数据不会发送到任何第三方服务器</li>
+                    <li>扩展开发者无法访问您的数据</li>
+                </ul>
+
+                <h3>存储内容详情</h3>
+                <table class="permissions-table">
+                    <thead>
+                        <tr>
+                            <th>数据项</th>
+                            <th>说明</th>
+                            <th>示例</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>globalMode</strong></td>
+                            <td>当前全局视觉模式</td>
+                            <td>"contrast", "grayscale", "normal"等</td>
+                        </tr>
+                        <tr>
+                            <td><strong>customFilters</strong></td>
+                            <td>自定义滤镜参数</td>
+                            <td>{"contrast": 120, "brightness": 110, ...}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>siteConfigs</strong></td>
+                            <td>各网站独立配置</td>
+                            <td>{"example.com": {"mode": "invert", ...}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>rememberSite</strong></td>
+                            <td>是否记住网站设置</td>
+                            <td>true / false</td>
+                        </tr>
+                        <tr>
+                            <td><strong>globalApply</strong></td>
+                            <td>是否全局应用到所有标签页</td>
+                            <td>true / false</td>
+                        </tr>
+                        <tr>
+                            <td><strong>lastActiveMode</strong></td>
+                            <td>上次使用的模式</td>
+                            <td>"nightMode", "custom"等</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>数据删除</h3>
+                <p>您可以随时删除扩展存储的所有数据：</p>
+                <ul>
+                    <li><strong>方法1：</strong>卸载扩展（所有数据将自动删除）</li>
+                    <li><strong>方法2：</strong>清除浏览器数据时选择"扩展的 Cookie 和网站数据"</li>
+                    <li><strong>方法3：</strong>通过 Chrome 开发者工具手动清除（chrome://extensions -> 详细信息 -> 清除存储数据）</li>
+                </ul>
+            </div>
+
+            <!-- 第5节 -->
+            <div class="section" id="section5">
+                <h2><span class="icon">🌐</span>5. 第三方服务</h2>
+                
+                <div class="highlight-box">
+                    <h4>✓ 完全独立运行</h4>
+                    <p><strong>本扩展不使用任何第三方服务。</strong></p>
+                </div>
+
+                <ul class="x-list">
+                    <li>不使用分析服务（如 Google Analytics）</li>
+                    <li>不使用广告网络</li>
+                    <li>不连接外部服务器</li>
+                    <li>不使用第三方 SDK 或库（除了Chrome API）</li>
+                    <li>不加载远程代码或资源</li>
+                    <li>不使用 CDN 加载外部脚本</li>
+                </ul>
+
+                <p>所有代码都包含在扩展包内，安装后完全离线运行。</p>
+            </div>
+
+            <!-- 第6节 -->
+            <div class="section" id="section6">
+                <h2><span class="icon">🔐</span>6. 数据安全</h2>
+                
+                <h3>安全措施</h3>
+                <ul class="check-list">
+                    <li><strong>本地处理：</strong>所有数据处理都在您的本地浏览器中完成</li>
+                    <li><strong>无网络传输：</strong>扩展不发起任何网络请求</li>
+                    <li><strong>无远程代码：</strong>不执行任何来自外部的代码</li>
+                    <li><strong>沙箱隔离：</strong>遵循 Chrome 扩展的安全沙箱机制</li>
+                    <li><strong>最小权限：</strong>仅请求必要的权限</li>
+                    <li><strong>开源透明：</strong>代码结构简单，易于审查</li>
+                </ul>
+
+                <h3>Chrome 扩展安全框架</h3>
+                <p>本扩展遵循 Chrome Manifest V3 规范，该规范提供了增强的安全性：</p>
+                <ul>
+                    <li>Service Worker 替代背景页面，提高安全性和性能</li>
+                    <li>严格的内容安全策略（CSP）</li>
+                    <li>声明式权限系统</li>
+                    <li>隔离的执行环境</li>
+                </ul>
+            </div>
+
+            <!-- 第7节 -->
+            <div class="section" id="section7">
+                <h2><span class="icon">👤</span>7. 用户权利</h2>
+                
+                <p>作为本扩展的用户，您拥有以下权利：</p>
+
+                <h3>✓ 完全控制权</h3>
+                <ul>
+                    <li><strong>查看数据：</strong>您可以随时查看扩展存储的所有配置数据（通过浏览器的开发者工具或扩展的导出功能）</li>
+                    <li><strong>修改数据：</strong>您可以自由修改任何设置</li>
+                    <li><strong>删除数据：</strong>您可以随时卸载扩展以删除所有数据</li>
+                    <li><strong>导出数据：</strong>通过"导出配置"功能备份您的设置</li>
+                    <li><strong>导入数据：</strong>通过"导入配置"功能恢复之前的设置</li>
+                </ul>
+
+                <h3>✓ 透明度</h3>
+                <ul>
+                    <li>您可以审查扩展的源代码（右键扩展 -> 管理扩展 -> 查看源代码）</li>
+                    <li>本隐私政策明确说明了扩展的所有行为</li>
+                    <li>没有隐藏的功能或数据收集</li>
+                </ul>
+
+                <h3>✓ 停止使用</h3>
+                <ul>
+                    <li>您可以随时禁用或卸载扩展</li>
+                    <li>卸载后，所有本地数据将被自动清除</li>
+                    <li>不会留下任何残留数据或追踪</li>
+                </ul>
+            </div>
+
+            <!-- 第8节 -->
+            <div class="section" id="section8">
+                <h2><span class="icon">📝</span>8. 政策更新</h2>
+                
+                <p>我们可能会不时更新本隐私政策，以反映以下变化：</p>
+                <ul>
+                    <li>扩展功能的更新</li>
+                    <li>法律法规的要求</li>
+                    <li>安全或隐私保护措施的改进</li>
+                </ul>
+
+                <h3>更新通知</h3>
+                <p>如果我们对隐私政策做出重大更改，我们将通过以下方式通知您：</p>
+                <ul>
+                    <li>在扩展更新说明中注明</li>
+                    <li>在 Chrome 网上应用店的扩展页面上更新</li>
+                    <li>通过扩展界面显示通知（如适用）</li>
+                </ul>
+
+                <div class="highlight-box warning">
+                    <h4>⚠️ 重要提示</h4>
+                    <p>继续使用更新后的扩展即表示您接受更新后的隐私政策。如果您不同意新的政策，请停止使用并卸载扩展。</p>
+                </div>
+
+                <p><strong>当前版本：</strong> 1.0<br>
+                <strong>生效日期：</strong> 2025年10月27日<br>
+                <strong>最后更新：</strong> 2025年10月27日</p>
+            </div>
+
+            <!-- 第9节 -->
+            <div class="section" id="section9">
+                <h2><span class="icon">📧</span>9. 联系方式</h2>
+                
+                <p>如果您对本隐私政策或扩展的数据处理有任何疑问、意见或投诉，欢迎通过以下方式联系我们：</p>
+
+                <div class="highlight-box info">
+                    <h4>📮 联系信息</h4>
+                    <p>
+                        <strong>开发者邮箱：</strong> <a href="mailto:hengchuang2025@126.com">hengchuang2025@126.com</a><br>
+                        <strong>扩展名称：</strong> 高对比度模式<br>
+                        <strong>扩展版本：</strong> 1.2.2
+                    </p>
+                </div>
+
+                <h3>反馈与支持</h3>
+                <ul>
+                    <li><strong>隐私问题：</strong>任何关于数据处理或隐私保护的问题</li>
+                    <li><strong>功能建议：</strong>改进扩展功能的建议</li>
+                    <li><strong>错误报告：</strong>发现的任何技术问题或 bug</li>
+                    <li><strong>安全漏洞：</strong>如发现安全问题，请优先通过邮件联系我们</li>
+                </ul>
+
+                <p>我们会尽快回复您的咨询（通常在 3-5 个工作日内）。</p>
+            </div>
+
+            <!-- 总结 -->
+            <div class="highlight-box">
+                <h4>🎯 隐私承诺总结</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>✅ <strong>零数据收集：</strong>不收集任何用户数据</li>
+                    <li>✅ <strong>本地存储：</strong>所有设置仅保存在您的浏览器中</li>
+                    <li>✅ <strong>无网络通信：</strong>不发起任何网络请求</li>
+                    <li>✅ <strong>无第三方服务：</strong>完全独立运行</li>
+                    <li>✅ <strong>无广告追踪：</strong>不包含任何广告或追踪代码</li>
+                    <li>✅ <strong>开源透明：</strong>代码可审查，行为可验证</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="footer">
+            <p><strong>高对比度模式</strong> v1.2.2</p>
+            <p>致力于为所有用户提供更好的网页视觉体验</p>
+            <p style="margin-top: 20px;">
+                <a href="mailto:hengchuang2025@126.com">联系我们</a> | 
+                <a href="#" onclick="window.print(); return false;">打印此页</a>
+            </p>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #999;">
+                © 2025 高对比度模式扩展. 保留所有权利.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // 添加返回顶部按钮
+        const backToTop = document.createElement('div');
+        backToTop.innerHTML = '↑';
+        backToTop.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        `;
+        document.body.appendChild(backToTop);
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.opacity = '1';
+            } else {
+                backToTop.style.opacity = '0';
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
+
