@@ -1,455 +1,478 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>隐私政策 - 抖音主页视频无水印提取器 | Privacy Policy</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Telegram Blur</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      line-height: 1.8;
-      color: #333;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      padding: 20px;
-      min-height: 100vh;
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-    }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
 
-    .header {
-      background: linear-gradient(135deg, #fe2c55 0%, #ff6b6b 100%);
-      color: white;
-      padding: 40px 30px;
-      text-align: center;
-    }
+        .header {
+            background: linear-gradient(135deg, #29AAEC 0%, #2196D9 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
 
-    .header h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
 
-    .header .subtitle {
-      font-size: 18px;
-      opacity: 0.95;
-      margin-bottom: 15px;
-    }
+        .header p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
 
-    .header .update-date {
-      font-size: 14px;
-      opacity: 0.85;
-      background: rgba(255, 255, 255, 0.2);
-      display: inline-block;
-      padding: 5px 15px;
-      border-radius: 20px;
-      margin-top: 10px;
-    }
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            padding: 5px;
+        }
 
-    .content {
-      padding: 40px 30px;
-    }
+        .lang-btn {
+            padding: 8px 20px;
+            border: none;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
 
-    .language-toggle {
-      text-align: center;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 2px solid #f0f0f0;
-    }
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
 
-    .language-toggle button {
-      background: #fe2c55;
-      color: white;
-      border: none;
-      padding: 10px 25px;
-      margin: 0 5px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: bold;
-      transition: all 0.3s;
-    }
+        .lang-btn.active {
+            background: white;
+            color: #29AAEC;
+        }
 
-    .language-toggle button:hover {
-      background: #e62a4d;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(254, 44, 85, 0.3);
-    }
+        .content {
+            padding: 50px 40px;
+        }
 
-    .language-toggle button.active {
-      background: #333;
-    }
+        .section {
+            margin-bottom: 40px;
+        }
 
-    .language-section {
-      display: none;
-    }
+        .section h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #29AAEC;
+            display: inline-block;
+        }
 
-    .language-section.active {
-      display: block;
-      animation: fadeIn 0.5s;
-    }
+        .section h3 {
+            font-size: 18px;
+            color: #34495e;
+            margin: 20px 0 10px;
+        }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+        .section p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 15px;
+        }
 
-    h2 {
-      color: #fe2c55;
-      font-size: 24px;
-      margin-bottom: 25px;
-      padding-bottom: 10px;
-      border-bottom: 3px solid #fe2c55;
-    }
+        .section ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
 
-    h3 {
-      color: #333;
-      font-size: 18px;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-    }
+        .section li {
+            margin-bottom: 10px;
+            color: #555;
+        }
 
-    h3::before {
-      content: "▸";
-      color: #fe2c55;
-      font-weight: bold;
-      margin-right: 10px;
-      font-size: 20px;
-    }
+        .highlight-box {
+            background: #f0f8ff;
+            border-left: 4px solid #29AAEC;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
 
-    p, li {
-      margin-bottom: 15px;
-      color: #555;
-      font-size: 15px;
-    }
+        .highlight-box strong {
+            color: #29AAEC;
+        }
 
-    ul {
-      margin-left: 25px;
-      margin-bottom: 20px;
-    }
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #e0e6ed;
+        }
 
-    li {
-      margin-bottom: 10px;
-      padding-left: 5px;
-    }
+        .footer p {
+            color: #6c757d;
+            font-size: 14px;
+        }
 
-    .highlight {
-      background: #fff3cd;
-      padding: 20px;
-      border-left: 4px solid #ffc107;
-      border-radius: 4px;
-      margin: 20px 0;
-    }
+        .footer a {
+            color: #29AAEC;
+            text-decoration: none;
+        }
 
-    .contact-box {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 25px;
-      border-radius: 12px;
-      margin-top: 30px;
-      text-align: center;
-    }
+        .footer a:hover {
+            text-decoration: underline;
+        }
 
-    .contact-box h3 {
-      color: white;
-      border: none;
-      margin-bottom: 10px;
-    }
+        .lang-content {
+            display: none;
+        }
 
-    .contact-box h3::before {
-      color: white;
-    }
+        .lang-content.active {
+            display: block;
+        }
 
-    .contact-box p {
-      color: white;
-      margin-bottom: 10px;
-    }
+        .icon {
+            display: inline-block;
+            margin-right: 8px;
+        }
 
-    .wechat-id {
-      background: rgba(255, 255, 255, 0.2);
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 25px;
-      font-weight: bold;
-      font-size: 18px;
-      margin-top: 10px;
-    }
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px 20px;
+            }
 
-    .footer {
-      background: #f8f9fa;
-      padding: 20px;
-      text-align: center;
-      color: #666;
-      font-size: 14px;
-      border-top: 1px solid #e0e0e0;
-    }
+            .header h1 {
+                font-size: 24px;
+            }
 
-    .footer a {
-      color: #fe2c55;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding: 10px;
-      }
-
-      .header {
-        padding: 30px 20px;
-      }
-
-      .header h1 {
-        font-size: 22px;
-      }
-
-      .header .subtitle {
-        font-size: 16px;
-      }
-
-      .content {
-        padding: 30px 20px;
-      }
-
-      h2 {
-        font-size: 20px;
-      }
-
-      h3 {
-        font-size: 16px;
-      }
-    }
-  </style>
+            .lang-switch {
+                position: static;
+                margin: 20px auto;
+                width: fit-content;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>🎬 抖音主页视频无水印提取器</h1>
-      <div class="subtitle">Douyin Video Watermark-Free Extractor</div>
-      <div class="update-date">📅 最后更新 Last Updated: 2025年10月 October 2025</div>
+    <div class="container">
+        <div class="header" style="position: relative;">
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('en')" data-lang="en">English</button>
+                <button class="lang-btn" onclick="switchLang('zh')" data-lang="zh">中文</button>
+            </div>
+            <h1>🔒 Privacy Policy</h1>
+            <p>Last Updated: November 3, 2025</p>
+        </div>
+
+        <div class="content">
+            <!-- English Version -->
+            <div class="lang-content active" id="content-en">
+                <div class="section">
+                    <h2><span class="icon">📋</span>Overview</h2>
+                    <p>
+                        Telegram Blur ("the Extension", "we", "our") is committed to protecting your privacy. 
+                        This Privacy Policy explains how our browser extension handles your information.
+                    </p>
+                    <div class="highlight-box">
+                        <strong>Key Point:</strong> We do NOT collect, store, transmit, or share any of your personal data. 
+                        All settings are stored locally on your device.
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">🔍</span>Information We Do NOT Collect</h2>
+                    <p>We want to be clear about what we do NOT do:</p>
+                    <ul>
+                        <li><strong>No Personal Information:</strong> We do not collect names, email addresses, or any identifying information</li>
+                        <li><strong>No Message Content:</strong> We do not read, store, or transmit your Telegram messages</li>
+                        <li><strong>No Browsing History:</strong> We do not track your browsing activity</li>
+                        <li><strong>No Analytics:</strong> We do not use any analytics or tracking services</li>
+                        <li><strong>No Third-Party Services:</strong> We do not send data to any external servers</li>
+                        <li><strong>No Cookies:</strong> We do not set any cookies</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">💾</span>Local Data Storage</h2>
+                    <p>The Extension only stores your preferences locally on your device using Chrome's storage API:</p>
+                    <ul>
+                        <li>Main toggle on/off state</li>
+                        <li>Individual blur feature preferences (messages, media, profile pictures, etc.)</li>
+                        <li>UI customization settings</li>
+                    </ul>
+                    <p>
+                        This data is stored exclusively on your device and is never transmitted to our servers or any third parties. 
+                        You can clear this data at any time by removing the Extension.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">🛡️</span>How the Extension Works</h2>
+                    <p>Our Extension functions entirely on your device:</p>
+                    <ul>
+                        <li><strong>Content Modification:</strong> The Extension injects CSS styles into Telegram Web (https://web.telegram.org/) 
+                            to apply blur effects. These styles only affect visual presentation.</li>
+                        <li><strong>Local Processing:</strong> All operations are performed locally in your browser</li>
+                        <li><strong>No Network Requests:</strong> The Extension does not make any network requests or communicate with external servers</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">🔐</span>Permissions Explained</h2>
+                    <p>The Extension requests the following permissions:</p>
+                    <h3>• Storage Permission</h3>
+                    <p>Used solely to save your preferences locally on your device.</p>
+                    
+                    <h3>• Scripting Permission</h3>
+                    <p>Required to inject CSS styles into Telegram Web pages to apply blur effects.</p>
+                    
+                    <h3>• Host Permission (https://web.telegram.org/)</h3>
+                    <p>Necessary to access and modify the Telegram Web interface. We only request access to Telegram Web, 
+                       not any other websites.</p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">🌐</span>Third-Party Services</h2>
+                    <p>
+                        The Extension does not integrate with any third-party services, analytics platforms, or advertising networks. 
+                        We do not use Google Analytics, Facebook Pixel, or any similar tracking tools.
+                    </p>
+                    <p>
+                        <strong>Note:</strong> The Extension popup interface uses Google Fonts for typography, which is loaded from 
+                        Google's CDN. This is a standard practice and only involves loading font files, not transmitting any user data.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">🔄</span>Data Retention</h2>
+                    <p>
+                        Since we do not collect any data, there is no data retention policy. Your local settings remain on your device 
+                        until you uninstall the Extension or clear your browser data.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">👥</span>Children's Privacy</h2>
+                    <p>
+                        The Extension does not knowingly collect any information from anyone, including children under 13. 
+                        Since we do not collect any data, the Extension is safe for users of all ages.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">📝</span>Changes to This Policy</h2>
+                    <p>
+                        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an 
+                        updated "Last Updated" date. We encourage you to review this policy periodically.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">📧</span>Contact Us</h2>
+                    <p>
+                        If you have any questions about this Privacy Policy or the Extension, please contact us at:
+                    </p>
+                    <p><strong>Email:</strong> <a href="mailto:hengchuang2025@126.com">hengchuang2025@126.com</a></p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">✅</span>Your Rights</h2>
+                    <p>Since we do not collect any personal data, there is no data to access, modify, or delete. However, you have full control over:</p>
+                    <ul>
+                        <li>Enabling or disabling the Extension at any time</li>
+                        <li>Configuring all blur settings according to your preferences</li>
+                        <li>Uninstalling the Extension to remove all local settings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chinese Version -->
+            <div class="lang-content" id="content-zh">
+                <div class="section">
+                    <h2><span class="icon">📋</span>概述</h2>
+                    <p>
+                        Telegram Blur（"本扩展"、"我们"）致力于保护您的隐私。
+                        本隐私政策说明我们的浏览器扩展如何处理您的信息。
+                    </p>
+                    <div class="highlight-box">
+                        <strong>重点说明：</strong>我们不会收集、存储、传输或共享您的任何个人数据。
+                        所有设置均存储在您的设备本地。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">🔍</span>我们不收集的信息</h2>
+                    <p>我们明确声明以下内容：</p>
+                    <ul>
+                        <li><strong>不收集个人信息：</strong>我们不收集姓名、电子邮件地址或任何身份识别信息</li>
+                        <li><strong>不读取消息内容：</strong>我们不读取、存储或传输您的Telegram消息</li>
+                        <li><strong>不追踪浏览历史：</strong>我们不跟踪您的浏览活动</li>
+                        <li><strong>不使用分析工具：</strong>我们不使用任何分析或跟踪服务</li>
+                        <li><strong>不连接第三方服务：</strong>我们不向任何外部服务器发送数据</li>
+                        <li><strong>不使用Cookie：</strong>我们不设置任何Cookie</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">💾</span>本地数据存储</h2>
+                    <p>本扩展仅使用Chrome存储API在您的设备本地存储您的偏好设置：</p>
+                    <ul>
+                        <li>主开关的开启/关闭状态</li>
+                        <li>各项模糊功能的偏好设置（消息、媒体、头像等）</li>
+                        <li>界面自定义设置</li>
+                    </ul>
+                    <p>
+                        这些数据仅存储在您的设备上，从不传输到我们的服务器或任何第三方。
+                        您可以随时通过卸载扩展来清除这些数据。
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">🛡️</span>扩展工作原理</h2>
+                    <p>本扩展完全在您的设备上运行：</p>
+                    <ul>
+                        <li><strong>内容修改：</strong>本扩展向Telegram网页版(https://web.telegram.org/)注入CSS样式
+                            以应用模糊效果。这些样式仅影响视觉呈现。</li>
+                        <li><strong>本地处理：</strong>所有操作均在您的浏览器本地执行</li>
+                        <li><strong>无网络请求：</strong>本扩展不发起任何网络请求或与外部服务器通信</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">🔐</span>权限说明</h2>
+                    <p>本扩展请求以下权限：</p>
+                    <h3>• Storage（存储）权限</h3>
+                    <p>仅用于在您的设备本地保存您的偏好设置。</p>
+                    
+                    <h3>• Scripting（脚本）权限</h3>
+                    <p>用于向Telegram网页版注入CSS样式以应用模糊效果。</p>
+                    
+                    <h3>• Host Permission（主机权限）(https://web.telegram.org/)</h3>
+                    <p>用于访问和修改Telegram网页版界面。我们仅请求访问Telegram网页版，
+                       不请求访问其他任何网站。</p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">🌐</span>第三方服务</h2>
+                    <p>
+                        本扩展不集成任何第三方服务、分析平台或广告网络。
+                        我们不使用Google Analytics、Facebook Pixel或任何类似的跟踪工具。
+                    </p>
+                    <p>
+                        <strong>说明：</strong>本扩展的弹出界面使用Google Fonts字体，这些字体从Google CDN加载。
+                        这是标准做法，仅涉及加载字体文件，不传输任何用户数据。
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">🔄</span>数据保留</h2>
+                    <p>
+                        由于我们不收集任何数据，因此没有数据保留政策。您的本地设置将保留在您的设备上，
+                        直到您卸载扩展或清除浏览器数据。
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">👥</span>儿童隐私</h2>
+                    <p>
+                        本扩展不会故意收集任何人的信息，包括13岁以下的儿童。
+                        由于我们不收集任何数据，本扩展对所有年龄段的用户都是安全的。
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">📝</span>政策变更</h2>
+                    <p>
+                        我们可能会不时更新本隐私政策。任何更改都将发布在本页面上，并更新"最后更新"日期。
+                        我们建议您定期查看本政策。
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">📧</span>联系我们</h2>
+                    <p>
+                        如果您对本隐私政策或本扩展有任何疑问，请通过以下方式联系我们：
+                    </p>
+                    <p><strong>电子邮箱：</strong><a href="mailto:hengchuang2025@126.com">hengchuang2025@126.com</a></p>
+                </div>
+
+                <div class="section">
+                    <h2><span class="icon">✅</span>您的权利</h2>
+                    <p>由于我们不收集任何个人数据，因此没有需要访问、修改或删除的数据。但是，您完全可以控制：</p>
+                    <ul>
+                        <li>随时启用或禁用本扩展</li>
+                        <li>根据您的偏好配置所有模糊设置</li>
+                        <li>卸载扩展以删除所有本地设置</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Telegram Blur. All rights reserved.</p>
+            <p>This extension is not affiliated with or endorsed by Telegram.</p>
+            <p>Contact: <a href="mailto:hengchuang2025@126.com">hengchuang2025@126.com</a></p>
+        </div>
     </div>
 
-    <div class="content">
-      <div class="language-toggle">
-        <button class="active" onclick="switchLanguage('zh')">中文 🇨🇳</button>
-        <button onclick="switchLanguage('en')">English 🇺🇸</button>
-      </div>
-
-      <!-- 中文版本 -->
-      <div id="zh" class="language-section active">
-        <h2>隐私政策</h2>
-
-        <p>感谢您使用「抖音主页视频无水印提取器」Chrome扩展程序（以下简称"本扩展"）。我们非常重视您的隐私保护，本隐私政策将向您说明本扩展如何收集、使用和保护您的信息。</p>
-
-        <div class="highlight">
-          <strong>⚡ 核心承诺：</strong>本扩展不收集、不存储、不上传任何用户个人隐私信息。所有数据处理均在您的本地浏览器中完成。
-        </div>
-
-        <h3>1. 数据收集</h3>
-        <p>本扩展仅在以下情况下读取数据：</p>
-        <ul>
-          <li><strong>仅在用户主动操作时</strong>：当您点击扩展图标、悬浮按钮或右键菜单时，扩展才会读取抖音用户主页上的公开视频信息</li>
-          <li><strong>仅读取公开内容</strong>：视频链接、视频标题、视频封面图等公开显示的信息</li>
-          <li><strong>不收集个人信息</strong>：不收集您的抖音账号、密码、手机号、身份信息或任何私密数据</li>
-          <li><strong>不追踪浏览行为</strong>：不记录您的浏览历史或访问记录</li>
-        </ul>
-
-        <h3>2. 数据使用</h3>
-        <ul>
-          <li><strong>本地处理</strong>：所有视频信息的提取、展示和处理均在您的本地浏览器中完成</li>
-          <li><strong>第三方API调用</strong>：当您点击"去水印"按钮时，扩展会将视频链接发送到第三方公开的视频解析服务（api.7a.ink、api.douyin.wtf）以获取无水印下载地址</li>
-          <li><strong>不上传到开发者服务器</strong>：本扩展没有自己的服务器，不会将任何数据上传到开发者</li>
-          <li><strong>单一用途</strong>：数据仅用于提取和展示视频信息，不用于任何其他目的</li>
-        </ul>
-
-        <h3>3. 数据存储</h3>
-        <ul>
-          <li><strong>仅存储配置选项</strong>：本扩展使用Chrome的本地存储（localStorage）仅保存您的界面配置选项，例如是否显示首次使用提示</li>
-          <li><strong>不存储视频数据</strong>：不保存您提取的视频链接、标题或封面图</li>
-          <li><strong>您可随时清除</strong>：卸载扩展后，所有本地存储的配置数据将自动清除</li>
-        </ul>
-
-        <h3>4. 第三方服务</h3>
-        <p>本扩展调用的第三方视频解析API为公开服务，仅用于解析无水印视频下载链接。这些服务的隐私政策由其服务提供方制定，我们不对第三方服务的数据处理行为负责。</p>
-        <ul>
-          <li>api.7a.ink - 视频解析服务</li>
-          <li>api.douyin.wtf - 视频解析服务（备用）</li>
-        </ul>
-
-        <h3>5. 权限说明</h3>
-        <p>本扩展申请的权限及用途：</p>
-        <ul>
-          <li><strong>storage</strong>：保存用户配置选项</li>
-          <li><strong>contextMenus</strong>：在抖音页面上添加右键菜单快捷方式</li>
-          <li><strong>activeTab</strong>：读取当前标签页的视频信息（仅在用户主动操作时）</li>
-          <li><strong>clipboardWrite</strong>：实现"复制链接"功能</li>
-          <li><strong>downloads</strong>：下载无水印视频到本地</li>
-          <li><strong>douyin.com</strong>：在抖音网站上显示悬浮窗口并提取视频信息</li>
-        </ul>
-
-        <h3>6. 数据安全</h3>
-        <p>我们郑重承诺：</p>
-        <ul>
-          <li>❌ 不会出售您的任何数据给第三方</li>
-          <li>❌ 不会交易或转移您的数据</li>
-          <li>❌ 不会将数据用于广告或营销目的</li>
-          <li>❌ 不会将数据用于信用评估或贷款</li>
-          <li>✅ 所有数据处理遵循单一用途原则</li>
-        </ul>
-
-        <h3>7. 儿童隐私</h3>
-        <p>本扩展不会故意收集13岁以下儿童的个人信息。如果您认为我们可能无意中收集了儿童的信息，请立即联系我们。</p>
-
-        <h3>8. 隐私政策更新</h3>
-        <p>我们可能会不定期更新本隐私政策。更新后的政策将在此页面发布，重大变更会在扩展中通知用户。</p>
-
-        <h3>9. 用户权利</h3>
-        <p>您有权：</p>
-        <ul>
-          <li>随时停止使用本扩展</li>
-          <li>随时卸载本扩展</li>
-          <li>清除本扩展存储的所有本地数据</li>
-          <li>向我们询问关于数据处理的任何问题</li>
-        </ul>
-
-        <div class="contact-box">
-          <h3>📮 联系我们</h3>
-          <p>如有任何问题、建议或投诉，请通过以下方式联系开发者：</p>
-          <div class="wechat-id">💬 微信号: 8751148</div>
-        </div>
-      </div>
-
-      <!-- English Version -->
-      <div id="en" class="language-section">
-        <h2>Privacy Policy</h2>
-
-        <p>Thank you for using the "Douyin Video Watermark-Free Extractor" Chrome extension (hereinafter referred to as "this extension"). We highly value your privacy protection. This privacy policy explains how this extension collects, uses, and protects your information.</p>
-
-        <div class="highlight">
-          <strong>⚡ Core Commitment:</strong> This extension does not collect, store, or upload any user personal privacy information. All data processing is completed in your local browser.
-        </div>
-
-        <h3>1. Data Collection</h3>
-        <p>This extension only reads data in the following situations:</p>
-        <ul>
-          <li><strong>Only when users actively operate</strong>: When you click the extension icon, floating button, or context menu, the extension will read public video information on the Douyin user page</li>
-          <li><strong>Only read public content</strong>: Video links, video titles, video thumbnails, and other publicly displayed information</li>
-          <li><strong>No personal information collected</strong>: Does not collect your Douyin account, password, phone number, identity information, or any private data</li>
-          <li><strong>No browsing behavior tracking</strong>: Does not record your browsing history or access records</li>
-        </ul>
-
-        <h3>2. Data Usage</h3>
-        <ul>
-          <li><strong>Local processing</strong>: All video information extraction, display, and processing are completed in your local browser</li>
-          <li><strong>Third-party API calls</strong>: When you click the "Remove Watermark" button, the extension sends the video link to third-party public video parsing services (api.7a.ink, api.douyin.wtf) to obtain watermark-free download addresses</li>
-          <li><strong>Not uploaded to developer servers</strong>: This extension does not have its own server and will not upload any data to the developer</li>
-          <li><strong>Single purpose</strong>: Data is only used to extract and display video information, not for any other purpose</li>
-        </ul>
-
-        <h3>3. Data Storage</h3>
-        <ul>
-          <li><strong>Only store configuration options</strong>: This extension uses Chrome's local storage (localStorage) to save only your interface configuration options, such as whether to display first-time usage prompts</li>
-          <li><strong>No video data stored</strong>: Does not save the video links, titles, or thumbnails you extracted</li>
-          <li><strong>You can clear at any time</strong>: After uninstalling the extension, all locally stored configuration data will be automatically cleared</li>
-        </ul>
-
-        <h3>4. Third-Party Services</h3>
-        <p>The third-party video parsing APIs called by this extension are public services, only used to parse watermark-free video download links. The privacy policies of these services are established by their service providers, and we are not responsible for the data processing behavior of third-party services.</p>
-        <ul>
-          <li>api.7a.ink - Video parsing service</li>
-          <li>api.douyin.wtf - Video parsing service (backup)</li>
-        </ul>
-
-        <h3>5. Permissions Explanation</h3>
-        <p>Permissions requested by this extension and their purposes:</p>
-        <ul>
-          <li><strong>storage</strong>: Save user configuration options</li>
-          <li><strong>contextMenus</strong>: Add context menu shortcuts on Douyin pages</li>
-          <li><strong>activeTab</strong>: Read video information from the current tab (only when users actively operate)</li>
-          <li><strong>clipboardWrite</strong>: Implement the "copy link" function</li>
-          <li><strong>downloads</strong>: Download watermark-free videos to local</li>
-          <li><strong>douyin.com</strong>: Display floating windows on Douyin websites and extract video information</li>
-        </ul>
-
-        <h3>6. Data Security</h3>
-        <p>We solemnly promise:</p>
-        <ul>
-          <li>❌ Will not sell any of your data to third parties</li>
-          <li>❌ Will not trade or transfer your data</li>
-          <li>❌ Will not use data for advertising or marketing purposes</li>
-          <li>❌ Will not use data for credit assessment or loans</li>
-          <li>✅ All data processing follows the single-purpose principle</li>
-        </ul>
-
-        <h3>7. Children's Privacy</h3>
-        <p>This extension will not knowingly collect personal information from children under 13. If you believe we may have inadvertently collected information from children, please contact us immediately.</p>
-
-        <h3>8. Privacy Policy Updates</h3>
-        <p>We may update this privacy policy from time to time. The updated policy will be published on this page, and significant changes will be notified to users in the extension.</p>
-
-        <h3>9. User Rights</h3>
-        <p>You have the right to:</p>
-        <ul>
-          <li>Stop using this extension at any time</li>
-          <li>Uninstall this extension at any time</li>
-          <li>Clear all local data stored by this extension</li>
-          <li>Ask us any questions about data processing</li>
-        </ul>
-
-        <div class="contact-box">
-          <h3>📮 Contact Us</h3>
-          <p>If you have any questions, suggestions, or complaints, please contact the developer through:</p>
-          <div class="wechat-id">💬 WeChat ID: 8751148</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">
-      <p>© 2025 抖音主页视频无水印提取器 | Douyin Video Watermark-Free Extractor</p>
-      <p>本扩展为个人开发项目，与抖音官方无关 | This extension is an independent project and is not affiliated with Douyin</p>
-    </div>
-  </div>
-
-  <script>
-    function switchLanguage(lang) {
-      // 隐藏所有语言版本
-      document.querySelectorAll('.language-section').forEach(section => {
-        section.classList.remove('active');
-      });
-      
-      // 显示选中的语言版本
-      document.getElementById(lang).classList.add('active');
-      
-      // 更新按钮状态
-      document.querySelectorAll('.language-toggle button').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      event.target.classList.add('active');
-    }
-  </script>
+    <script>
+        function switchLang(lang) {
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected content
+            document.getElementById('content-' + lang).classList.add('active');
+            
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Update page title and header
+            if (lang === 'zh') {
+                document.title = '隐私政策 - Telegram Blur';
+                document.querySelector('.header h1').innerHTML = '🔒 隐私政策';
+                document.querySelector('.header p').textContent = '最后更新：2025年11月3日';
+            } else {
+                document.title = 'Privacy Policy - Telegram Blur';
+                document.querySelector('.header h1').innerHTML = '🔒 Privacy Policy';
+                document.querySelector('.header p').textContent = 'Last Updated: November 3, 2025';
+            }
+        }
+    </script>
 </body>
 </html>
 
