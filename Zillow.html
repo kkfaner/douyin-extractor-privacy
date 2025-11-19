@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Zillow Data Exporter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: white;
+            border-radius: 50px;
+            padding: 0.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 0.5rem;
+            z-index: 1000;
+        }
+
+        .lang-btn {
+            padding: 0.6rem 1.5rem;
+            border: none;
+            background: transparent;
+            color: #666;
+            cursor: pointer;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            color: #333;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -3rem auto 4rem;
+            padding: 0 2rem;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: #f0f4ff;
+            color: #667eea;
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #1a202c;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: #2d3748;
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        ul {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            color: #4a5568;
+        }
+
+        strong {
+            color: #2d3748;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: #fff5f5;
+            border-left: 4px solid #fc8181;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box {
+            background: #f0fff4;
+            border-left: 4px solid #68d391;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+            border: 2px solid #e2e8f0;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .contact-item::before {
+            content: '📧';
+            font-size: 1.5rem;
+        }
+
+        .contact-item.website::before {
+            content: '🌐';
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .lang-switch {
+                top: 1rem;
+                right: 1rem;
+            }
+
+            .content-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 链接样式 */
+        a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 语言切换按钮 -->
+    <div class="lang-switch">
+        <button class="lang-btn active" onclick="switchLang('zh')">中文</button>
+        <button class="lang-btn" onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header">
+        <h1 id="header-title">隐私政策</h1>
+        <p id="header-subtitle">Zillow数据爬虫导出器</p>
+    </div>
+
+    <!-- 主要内容 -->
+    <div class="container">
+        <div class="content-card">
+            <!-- 中文内容 -->
+            <div class="lang-content active" id="content-zh">
+                <span class="last-updated">最后更新日期: 2025年11月19日</span>
+
+                <h2>1. 概述</h2>
+                <p>Zillow数据爬虫导出器（以下简称"本扩展"）致力于保护用户隐私。本隐私政策说明了我们如何收集、使用和保护您的信息。</p>
+
+                <h2>2. 信息收集</h2>
+                
+                <h3>2.1 我们收集的信息</h3>
+                <p>本扩展收集以下信息：</p>
+                <ul>
+                    <li><strong>登录凭证</strong>: 当您登录tool.hcceo.com时，我们会存储您的登录状态和用户名</li>
+                    <li><strong>扩展设置</strong>: 您的个人偏好设置（如分页延迟时间）</li>
+                    <li><strong>使用权限信息</strong>: 您的账户权限状态和到期时间</li>
+                </ul>
+
+                <h3>2.2 我们不收集的信息</h3>
+                <div class="info-box">
+                    <p>本扩展<strong>不会</strong>收集或传输：</p>
+                    <ul>
+                        <li>您从Zillow提取的任何房产数据</li>
+                        <li>您的浏览历史</li>
+                        <li>您的个人身份信息（除用户名外）</li>
+                        <li>您的支付信息</li>
+                        <li>任何其他个人敏感数据</li>
+                    </ul>
+                </div>
+
+                <h2>3. 信息使用</h2>
+                
+                <h3>3.1 本地存储</h3>
+                <p>所有数据都存储在您的浏览器本地存储中，包括：</p>
+                <ul>
+                    <li>登录状态</li>
+                    <li>用户设置</li>
+                    <li>权限信息</li>
+                </ul>
+                <p>这些数据<strong>仅存储在您的设备上</strong>，不会上传到任何远程服务器。</p>
+
+                <h3>3.2 网络请求</h3>
+                <p>本扩展仅向以下域名发送网络请求：</p>
+                <ul>
+                    <li><strong>tool.hcceo.com</strong>: 用于用户认证和权限验证
+                        <ul>
+                            <li>发送内容：登录凭证</li>
+                            <li>接收内容：用户权限状态</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>本扩展<strong>不会</strong>将您从Zillow提取的数据发送到任何服务器。</p>
+
+                <h2>4. 数据安全</h2>
+                <p>我们采取以下措施保护您的数据：</p>
+                <ul>
+                    <li>所有与认证服务器的通信都通过HTTPS加密</li>
+                    <li>登录信息存储在Chrome的安全存储中</li>
+                    <li>不会将敏感数据暴露给第三方</li>
+                </ul>
+
+                <h2>5. 第三方服务</h2>
+                <p>本扩展会访问以下第三方服务：</p>
+
+                <h3>5.1 Zillow.com</h3>
+                <ul>
+                    <li><strong>目的</strong>: 提取房产数据</li>
+                    <li><strong>权限</strong>: 读取页面内容</li>
+                    <li><strong>数据处理</strong>: 所有数据在本地处理，不会传输到我们的服务器</li>
+                </ul>
+
+                <h3>5.2 tool.hcceo.com</h3>
+                <ul>
+                    <li><strong>目的</strong>: 用户认证和权限管理</li>
+                    <li><strong>数据传输</strong>: 仅传输登录凭证和权限验证请求</li>
+                    <li><strong>隐私保护</strong>: 不会收集或存储您的Zillow数据</li>
+                </ul>
+
+                <h2>6. 数据导出</h2>
+                <p>本扩展允许您将提取的数据导出为Excel文件：</p>
+                <ul>
+                    <li>导出的文件<strong>仅保存在您的本地设备</strong></li>
+                    <li>我们<strong>无法访问</strong>您导出的任何数据</li>
+                    <li>您完全控制导出数据的使用和分享</li>
+                </ul>
+
+                <h2>7. 用户权利</h2>
+                <p>您拥有以下权利：</p>
+                <ul>
+                    <li><strong>访问权</strong>: 查看扩展存储的所有数据</li>
+                    <li><strong>删除权</strong>: 随时卸载扩展以删除所有本地数据</li>
+                    <li><strong>控制权</strong>: 完全控制何时使用扩展功能</li>
+                </ul>
+
+                <h2>8. 儿童隐私</h2>
+                <p>本扩展不针对13岁以下的儿童，我们不会故意收集儿童的个人信息。</p>
+
+                <h2>9. 政策变更</h2>
+                <p>我们可能会不时更新本隐私政策。重大变更将通过扩展更新说明通知您。</p>
+
+                <h2>10. 联系我们</h2>
+                <div class="contact-box">
+                    <h3>如果您对本隐私政策有任何疑问，请联系：</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span><strong>邮箱</strong>: hengchuang2025@126.com</span>
+                        </div>
+                        <div class="contact-item website">
+                            <span><strong>网站</strong>: <a href="http://tool.hcceo.com" target="_blank">http://tool.hcceo.com</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>11. 合规声明</h2>
+                <p>本扩展遵守：</p>
+                <ul>
+                    <li>Chrome Web Store开发者政策</li>
+                    <li>适用的数据保护法律法规</li>
+                    <li>用户隐私保护最佳实践</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>⚠️ 重要提示</strong>: 本扩展仅用于合法的数据提取目的。用户应遵守Zillow的使用条款和相关法律法规。</p>
+                </div>
+            </div>
+
+            <!-- 英文内容 -->
+            <div class="lang-content" id="content-en">
+                <span class="last-updated">Last Updated: November 19, 2025</span>
+
+                <h2>1. Overview</h2>
+                <p>Zillow Data Exporter (hereinafter referred to as "this Extension") is committed to protecting user privacy. This privacy policy explains how we collect, use, and protect your information.</p>
+
+                <h2>2. Information Collection</h2>
+                
+                <h3>2.1 Information We Collect</h3>
+                <p>This Extension collects the following information:</p>
+                <ul>
+                    <li><strong>Login Credentials</strong>: When you log in to tool.hcceo.com, we store your login status and username</li>
+                    <li><strong>Extension Settings</strong>: Your personal preference settings (such as pagination delay time)</li>
+                    <li><strong>Permission Information</strong>: Your account permission status and expiration time</li>
+                </ul>
+
+                <h3>2.2 Information We Do NOT Collect</h3>
+                <div class="info-box">
+                    <p>This Extension <strong>does NOT</strong> collect or transmit:</p>
+                    <ul>
+                        <li>Any property data you extract from Zillow</li>
+                        <li>Your browsing history</li>
+                        <li>Your personal identification information (except username)</li>
+                        <li>Your payment information</li>
+                        <li>Any other personal sensitive data</li>
+                    </ul>
+                </div>
+
+                <h2>3. Information Usage</h2>
+                
+                <h3>3.1 Local Storage</h3>
+                <p>All data is stored in your browser's local storage, including:</p>
+                <ul>
+                    <li>Login status</li>
+                    <li>User settings</li>
+                    <li>Permission information</li>
+                </ul>
+                <p>This data is <strong>stored only on your device</strong> and is not uploaded to any remote server.</p>
+
+                <h3>3.2 Network Requests</h3>
+                <p>This Extension only sends network requests to the following domain:</p>
+                <ul>
+                    <li><strong>tool.hcceo.com</strong>: For user authentication and permission verification
+                        <ul>
+                            <li>Sent content: Login credentials</li>
+                            <li>Received content: User permission status</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>This Extension <strong>does NOT</strong> send any data you extract from Zillow to any server.</p>
+
+                <h2>4. Data Security</h2>
+                <p>We take the following measures to protect your data:</p>
+                <ul>
+                    <li>All communication with the authentication server is encrypted via HTTPS</li>
+                    <li>Login information is stored in Chrome's secure storage</li>
+                    <li>Sensitive data is not exposed to third parties</li>
+                </ul>
+
+                <h2>5. Third-Party Services</h2>
+                <p>This Extension accesses the following third-party services:</p>
+
+                <h3>5.1 Zillow.com</h3>
+                <ul>
+                    <li><strong>Purpose</strong>: Extract property data</li>
+                    <li><strong>Permission</strong>: Read page content</li>
+                    <li><strong>Data Processing</strong>: All data is processed locally and not transmitted to our servers</li>
+                </ul>
+
+                <h3>5.2 tool.hcceo.com</h3>
+                <ul>
+                    <li><strong>Purpose</strong>: User authentication and permission management</li>
+                    <li><strong>Data Transmission</strong>: Only transmits login credentials and permission verification requests</li>
+                    <li><strong>Privacy Protection</strong>: Does not collect or store your Zillow data</li>
+                </ul>
+
+                <h2>6. Data Export</h2>
+                <p>This Extension allows you to export extracted data as Excel files:</p>
+                <ul>
+                    <li>Exported files are <strong>saved only on your local device</strong></li>
+                    <li>We <strong>cannot access</strong> any data you export</li>
+                    <li>You have complete control over the use and sharing of exported data</li>
+                </ul>
+
+                <h2>7. User Rights</h2>
+                <p>You have the following rights:</p>
+                <ul>
+                    <li><strong>Access Right</strong>: View all data stored by the Extension</li>
+                    <li><strong>Deletion Right</strong>: Uninstall the Extension at any time to delete all local data</li>
+                    <li><strong>Control Right</strong>: Complete control over when to use Extension features</li>
+                </ul>
+
+                <h2>8. Children's Privacy</h2>
+                <p>This Extension is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+                <h2>9. Policy Changes</h2>
+                <p>We may update this privacy policy from time to time. Significant changes will be notified through Extension update notes.</p>
+
+                <h2>10. Contact Us</h2>
+                <div class="contact-box">
+                    <h3>If you have any questions about this privacy policy, please contact:</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span><strong>Email</strong>: hengchuang2025@126.com</span>
+                        </div>
+                        <div class="contact-item website">
+                            <span><strong>Website</strong>: <a href="http://tool.hcceo.com" target="_blank">http://tool.hcceo.com</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>11. Compliance Statement</h2>
+                <p>This Extension complies with:</p>
+                <ul>
+                    <li>Chrome Web Store Developer Policies</li>
+                    <li>Applicable data protection laws and regulations</li>
+                    <li>User privacy protection best practices</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>⚠️ Important Notice</strong>: This Extension is intended for lawful data extraction purposes only. Users should comply with Zillow's Terms of Service and applicable laws and regulations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>&copy; 2025 Zillow Data Exporter. All rights reserved.</p>
+    </div>
+
+    <script>
+        // 语言切换功能
+        function switchLang(lang) {
+            // 更新按钮状态
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // 更新内容显示
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById('content-' + lang).classList.add('active');
+
+            // 更新头部标题
+            if (lang === 'zh') {
+                document.getElementById('header-title').textContent = '隐私政策';
+                document.getElementById('header-subtitle').textContent = 'Zillow数据爬虫导出器';
+                document.documentElement.lang = 'zh-CN';
+            } else {
+                document.getElementById('header-title').textContent = 'Privacy Policy';
+                document.getElementById('header-subtitle').textContent = 'Zillow Data Exporter';
+                document.documentElement.lang = 'en';
+            }
+
+            // 保存语言偏好
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        // 页面加载时恢复语言偏好
+        window.addEventListener('DOMContentLoaded', () => {
+            const preferredLang = localStorage.getItem('preferredLang') || 'zh';
+            if (preferredLang === 'en') {
+                document.querySelectorAll('.lang-btn')[1].click();
+            }
+        });
+
+        // 平滑滚动到顶部
+        window.addEventListener('scroll', () => {
+            const scrollBtn = document.getElementById('scroll-top');
+            if (scrollBtn) {
+                if (window.pageYOffset > 300) {
+                    scrollBtn.style.display = 'block';
+                } else {
+                    scrollBtn.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
