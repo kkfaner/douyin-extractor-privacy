@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | 隐私权政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .language-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tab-button {
+            padding: 10px 30px;
+            border: 2px solid #007bff;
+            background: white;
+            color: #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .tab-button:hover {
+            background: #e7f3ff;
+        }
+
+        .tab-button.active {
+            background: #007bff;
+            color: white;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #1a1a1a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .update-date {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .tab-button {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy | 隐私权政策</h1>
+            <div class="language-tabs">
+                <button class="tab-button active" onclick="switchLanguage('zh')">中文</button>
+                <button class="tab-button" onclick="switchLanguage('en')">English</button>
+            </div>
+        </div>
+
+        <!-- 中文内容 -->
+        <div id="zh-content" class="content active">
+            <h2>隐私权政策</h2>
+            
+            <p><strong>最后更新日期：2024年11月</strong></p>
+
+            <div class="highlight">
+                <p><strong>重要提示：</strong>本扩展程序非常重视您的隐私保护。我们承诺不会收集、存储或分享您的任何个人数据。</p>
+            </div>
+
+            <h2>1. 信息收集</h2>
+            <p>本TikTok视频下载工具扩展程序<strong>不会收集</strong>以下任何信息：</p>
+            <ul>
+                <li>个人身份信息（姓名、邮箱、电话等）</li>
+                <li>浏览历史记录</li>
+                <li>下载历史记录</li>
+                <li>设备信息</li>
+                <li>位置信息</li>
+                <li>Cookie或其他追踪技术</li>
+            </ul>
+
+            <h2>2. 数据存储</h2>
+            <p>本扩展仅在您的本地浏览器中存储以下必要信息：</p>
+            <ul>
+                <li><strong>授权信息：</strong>用于验证扩展的合法使用权限</li>
+                <li><strong>用户配置：</strong>您的个人偏好设置（如下载路径等）</li>
+            </ul>
+            <p>所有数据均存储在您的本地设备上，不会上传到任何服务器。</p>
+
+            <h2>3. 权限使用说明</h2>
+            <h3>3.1 declarativeNetRequest权限</h3>
+            <p>用于修改TikTok视频请求的响应头，解决跨域访问限制，确保视频能够正常下载。此权限仅作用于TikTok域名。</p>
+
+            <h3>3.2 webRequest权限</h3>
+            <p>用于监听网络请求完成事件，自动检测TikTok页面，提供下载功能。不会拦截、修改或记录您的任何请求数据。</p>
+
+            <h3>3.3 tabs权限</h3>
+            <p>用于识别当前标签页是否为TikTok页面，以便提供相应功能。不会访问其他网站的标签页信息。</p>
+
+            <h3>3.4 storage权限</h3>
+            <p>用于在本地存储授权信息和用户配置，所有数据仅保存在您的设备上。</p>
+
+            <h3>3.5 downloads权限</h3>
+            <p>用于触发浏览器下载功能，将视频保存到您的本地设备。</p>
+
+            <h2>4. 第三方服务</h2>
+            <p>本扩展仅与以下服务进行通信：</p>
+            <ul>
+                <li><strong>TikTok.com：</strong>获取视频资源，这是扩展的核心功能</li>
+                <li><strong>授权服务器（tool.hcceo.com）：</strong>仅用于验证扩展的使用权限，不会传输任何用户数据</li>
+            </ul>
+
+            <h2>5. 数据安全</h2>
+            <p>我们采取以下措施保护您的数据安全：</p>
+            <ul>
+                <li>所有数据仅存储在本地，不上传到云端</li>
+                <li>不使用任何追踪或分析工具</li>
+                <li>不与任何第三方共享数据</li>
+                <li>代码开源透明，可供审查</li>
+            </ul>
+
+            <h2>6. 用户权利</h2>
+            <p>您拥有以下权利：</p>
+            <ul>
+                <li>随时卸载扩展，删除所有本地数据</li>
+                <li>通过浏览器设置清除扩展存储的数据</li>
+                <li>选择不使用扩展的任何功能</li>
+            </ul>
+
+            <h2>7. 儿童隐私</h2>
+            <p>本扩展不针对13岁以下儿童。我们不会故意收集儿童的个人信息。</p>
+
+            <h2>8. 政策更新</h2>
+            <p>我们可能会不定期更新本隐私政策。更新后的政策将在扩展中公布，建议您定期查看。</p>
+
+            <h2>9. 联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
+            <ul>
+                <li>通过Chrome网上应用店的扩展页面反馈</li>
+                <li>发送邮件至开发者邮箱</li>
+            </ul>
+
+            <div class="update-date">
+                <p>本隐私政策最后更新于：2024年11月26日</p>
+            </div>
+        </div>
+
+        <!-- 英文内容 -->
+        <div id="en-content" class="content">
+            <h2>Privacy Policy</h2>
+            
+            <p><strong>Last Updated: November 2024</strong></p>
+
+            <div class="highlight">
+                <p><strong>Important Notice:</strong> This extension takes your privacy very seriously. We commit to not collecting, storing, or sharing any of your personal data.</p>
+            </div>
+
+            <h2>1. Information Collection</h2>
+            <p>This TikTok Video Downloader extension <strong>does NOT collect</strong> any of the following information:</p>
+            <ul>
+                <li>Personal identification information (name, email, phone, etc.)</li>
+                <li>Browsing history</li>
+                <li>Download history</li>
+                <li>Device information</li>
+                <li>Location data</li>
+                <li>Cookies or other tracking technologies</li>
+            </ul>
+
+            <h2>2. Data Storage</h2>
+            <p>This extension only stores the following necessary information locally in your browser:</p>
+            <ul>
+                <li><strong>Authorization Information:</strong> Used to verify legitimate usage rights of the extension</li>
+                <li><strong>User Preferences:</strong> Your personal settings (such as download path, etc.)</li>
+            </ul>
+            <p>All data is stored on your local device and is never uploaded to any server.</p>
+
+            <h2>3. Permission Usage</h2>
+            <h3>3.1 declarativeNetRequest Permission</h3>
+            <p>Used to modify response headers for TikTok video requests to resolve cross-origin access restrictions and ensure videos can be downloaded properly. This permission only applies to TikTok domains.</p>
+
+            <h3>3.2 webRequest Permission</h3>
+            <p>Used to monitor network request completion events and automatically detect TikTok pages to provide download functionality. It does not intercept, modify, or record any of your request data.</p>
+
+            <h3>3.3 tabs Permission</h3>
+            <p>Used to identify whether the current tab is a TikTok page to provide appropriate functionality. It does not access tab information from other websites.</p>
+
+            <h3>3.4 storage Permission</h3>
+            <p>Used to store authorization information and user preferences locally. All data is only saved on your device.</p>
+
+            <h3>3.5 downloads Permission</h3>
+            <p>Used to trigger the browser's download functionality to save videos to your local device.</p>
+
+            <h2>4. Third-Party Services</h2>
+            <p>This extension only communicates with the following services:</p>
+            <ul>
+                <li><strong>TikTok.com:</strong> To retrieve video resources, which is the core functionality of the extension</li>
+                <li><strong>Authorization Server (tool.hcceo.com):</strong> Only used to verify extension usage rights, no user data is transmitted</li>
+            </ul>
+
+            <h2>5. Data Security</h2>
+            <p>We take the following measures to protect your data security:</p>
+            <ul>
+                <li>All data is stored locally only, not uploaded to the cloud</li>
+                <li>No tracking or analytics tools are used</li>
+                <li>No data is shared with any third parties</li>
+                <li>Code is open and transparent for review</li>
+            </ul>
+
+            <h2>6. User Rights</h2>
+            <p>You have the following rights:</p>
+            <ul>
+                <li>Uninstall the extension at any time to delete all local data</li>
+                <li>Clear extension-stored data through browser settings</li>
+                <li>Choose not to use any features of the extension</li>
+            </ul>
+
+            <h2>7. Children's Privacy</h2>
+            <p>This extension is not directed at children under 13 years of age. We do not knowingly collect personal information from children.</p>
+
+            <h2>8. Policy Updates</h2>
+            <p>We may update this privacy policy from time to time. Updated policies will be published in the extension, and we recommend that you review them regularly.</p>
+
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions or suggestions about this privacy policy, please contact us through:</p>
+            <ul>
+                <li>Feedback on the extension page in the Chrome Web Store</li>
+                <li>Email to the developer's email address</li>
+            </ul>
+
+            <div class="update-date">
+                <p>This Privacy Policy was last updated on: November 26, 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // 隐藏所有内容
+            document.querySelectorAll('.content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // 移除所有按钮的active状态
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // 显示选中的语言内容
+            document.getElementById(lang + '-content').classList.add('active');
+
+            // 激活对应的按钮
+            event.target.classList.add('active');
+
+            // 更新页面语言属性
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+        }
+    </script>
+</body>
+</html>
