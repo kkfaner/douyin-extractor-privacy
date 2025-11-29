@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Canva Bulk Background Remover Pro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 18px 30px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            color: #6c757d;
+            transition: all 0.3s ease;
+            border: none;
+            background: transparent;
+            position: relative;
+        }
+
+        .tab:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        .tab.active {
+            color: #667eea;
+            background: white;
+        }
+
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #495057;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #495057;
+            font-size: 15px;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #495057;
+            font-size: 15px;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: #e7f3ff;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .info-box p {
+            margin: 0;
+            color: #004085;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 25px 30px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        .contact-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .content {
+                padding: 25px 20px;
+            }
+
+            .tab {
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 Privacy Policy</h1>
+            <p>Canva Bulk Background Remover Pro</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="switchLanguage('zh')">中文</button>
+            <button class="tab" onclick="switchLanguage('en')">English</button>
+        </div>
+
+        <div class="content">
+            <!-- 中文内容 -->
+            <div id="zh-content" class="lang-content active">
+                <h2>隐私政策</h2>
+                <p><strong>最后更新日期：2025年1月</strong></p>
+
+                <div class="info-box">
+                    <p><strong>核心承诺：</strong>我们高度重视您的隐私。本扩展程序不会收集、存储或传输您的个人数据。</p>
+                </div>
+
+                <h2>1. 信息收集</h2>
+                <h3>1.1 我们不收集的信息</h3>
+                <p>Canva Bulk Background Remover Pro <strong>不会收集</strong>以下任何信息：</p>
+                <ul>
+                    <li>个人身份信息（姓名、地址、电话号码等）</li>
+                    <li>浏览历史记录</li>
+                    <li>您处理的图片内容</li>
+                    <li>您的Canva账户信息</li>
+                    <li>设备信息或位置数据</li>
+                </ul>
+
+                <h3>1.2 本地存储的数据</h3>
+                <p>为了提供服务，扩展程序会在您的设备上<strong>本地存储</strong>以下数据：</p>
+                <ul>
+                    <li><span class="highlight">用户偏好设置</span>：您的下载文件夹名称、快速模式开关等配置</li>
+                    <li><span class="highlight">许可证信息</span>：用于验证您的使用权限（仅存储在本地）</li>
+                    <li><span class="highlight">处理统计</span>：已处理图片数量等使用统计（仅用于显示）</li>
+                </ul>
+                <p><strong>重要：</strong>这些数据仅存储在您的本地设备上，不会上传到任何服务器。</p>
+
+                <h2>2. 权限说明</h2>
+                <p>本扩展程序请求以下权限，仅用于实现核心功能：</p>
+
+                <h3>2.1 storage（存储）</h3>
+                <p><strong>用途：</strong>在您的设备上本地保存用户设置和配置信息。</p>
+                <p><strong>数据范围：</strong>下载文件夹名称、快速模式设置、通知偏好、许可证信息等。</p>
+
+                <h3>2.2 downloads（下载）</h3>
+                <p><strong>用途：</strong>将处理后的图片保存到您指定的下载文件夹。</p>
+                <p><strong>数据范围：</strong>仅访问下载功能，不读取您的下载历史。</p>
+
+                <h3>2.3 tabs（标签页）</h3>
+                <p><strong>用途：</strong>与Canva网页进行交互，执行自动化处理流程。</p>
+                <p><strong>数据范围：</strong>仅访问Canva.com域名下的标签页，不访问其他网站。</p>
+
+                <h3>2.4 notifications（通知）</h3>
+                <p><strong>用途：</strong>向您发送处理进度和完成状态的通知。</p>
+                <p><strong>数据范围：</strong>仅发送本地通知，不涉及任何数据传输。</p>
+
+                <h3>2.5 主机权限</h3>
+                <ul>
+                    <li><strong>*.canva.com</strong>：访问Canva网站以执行背景移除操作</li>
+                    <li><strong>tool.hcceo.com</strong>：验证许可证状态（仅在您登录时）</li>
+                    <li><strong>canva-license-server.onrender.com</strong>：备用许可证验证服务器</li>
+                </ul>
+
+                <h2>3. 数据使用</h2>
+                <h3>3.1 本地处理</h3>
+                <p>所有图片处理操作均在Canva网站上进行，本扩展程序仅作为自动化工具：</p>
+                <ul>
+                    <li>不上传您的图片到任何第三方服务器</li>
+                    <li>不分析或存储图片内容</li>
+                    <li>仅协助您在Canva上批量处理图片</li>
+                </ul>
+
+                <h3>3.2 许可证验证</h3>
+                <p>当您激活专业版时，扩展程序会：</p>
+                <ul>
+                    <li>向许可证服务器发送您的邮箱地址以验证购买</li>
+                    <li>接收并本地存储许可证状态信息</li>
+                    <li>不会共享您的任何其他信息</li>
+                </ul>
+
+                <h2>4. 数据共享</h2>
+                <p><strong>我们不会与任何第三方共享您的数据。</strong></p>
+                <ul>
+                    <li>不出售用户数据</li>
+                    <li>不与广告商共享信息</li>
+                    <li>不向分析服务提供数据</li>
+                </ul>
+
+                <h2>5. 数据安全</h2>
+                <p>我们采取以下措施保护您的数据安全：</p>
+                <ul>
+                    <li>所有本地存储数据使用Chrome的安全存储API</li>
+                    <li>许可证验证使用HTTPS加密传输</li>
+                    <li>不在代码中硬编码任何敏感信息</li>
+                    <li>定期更新扩展程序以修复安全漏洞</li>
+                </ul>
+
+                <h2>6. 用户权利</h2>
+                <p>您拥有以下权利：</p>
+                <ul>
+                    <li><strong>访问权：</strong>您可以随时查看扩展程序存储的本地数据</li>
+                    <li><strong>删除权：</strong>您可以通过卸载扩展程序删除所有本地数据</li>
+                    <li><strong>控制权：</strong>您可以在设置中关闭通知等功能</li>
+                </ul>
+
+                <h2>7. 第三方服务</h2>
+                <p>本扩展程序与以下第三方服务交互：</p>
+                <ul>
+                    <li><strong>Canva.com：</strong>图片处理平台（遵循Canva的隐私政策）</li>
+                    <li><strong>恒创AI工具：</strong>许可证管理服务（仅用于验证购买）</li>
+                </ul>
+
+                <h2>8. 儿童隐私</h2>
+                <p>本扩展程序不针对13岁以下儿童，我们不会故意收集儿童的个人信息。</p>
+
+                <h2>9. 隐私政策更新</h2>
+                <p>我们可能会不时更新本隐私政策。重大变更时，我们会：</p>
+                <ul>
+                    <li>在扩展程序中显示通知</li>
+                    <li>更新本页面的"最后更新日期"</li>
+                    <li>通过扩展程序商店发布更新说明</li>
+                </ul>
+
+                <h2>10. 联系我们</h2>
+                <p>如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
+                <ul>
+                    <li><strong>邮箱：</strong> <a href="mailto:hengchuang2025@126.com" class="contact-link">hengchuang2025@126.com</a></li>
+                    <li><strong>网站：</strong> <a href="http://tool.hcceo.com" class="contact-link" target="_blank">tool.hcceo.com</a></li>
+                </ul>
+
+                <div class="info-box">
+                    <p><strong>透明承诺：</strong>我们承诺保持完全透明。如果您对我们的数据处理方式有任何疑问，请随时联系我们。</p>
+                </div>
+            </div>
+
+            <!-- English Content -->
+            <div id="en-content" class="lang-content">
+                <h2>Privacy Policy</h2>
+                <p><strong>Last Updated: January 2025</strong></p>
+
+                <div class="info-box">
+                    <p><strong>Core Commitment:</strong> We highly value your privacy. This extension does not collect, store, or transmit your personal data.</p>
+                </div>
+
+                <h2>1. Information Collection</h2>
+                <h3>1.1 Information We Do NOT Collect</h3>
+                <p>Canva Bulk Background Remover Pro <strong>does NOT collect</strong> any of the following information:</p>
+                <ul>
+                    <li>Personal identification information (name, address, phone number, etc.)</li>
+                    <li>Browsing history</li>
+                    <li>Content of images you process</li>
+                    <li>Your Canva account information</li>
+                    <li>Device information or location data</li>
+                </ul>
+
+                <h3>1.2 Locally Stored Data</h3>
+                <p>To provide services, the extension <strong>locally stores</strong> the following data on your device:</p>
+                <ul>
+                    <li><span class="highlight">User Preferences</span>: Your download folder name, fast mode settings, etc.</li>
+                    <li><span class="highlight">License Information</span>: Used to verify your usage rights (stored locally only)</li>
+                    <li><span class="highlight">Processing Statistics</span>: Number of processed images and usage stats (for display only)</li>
+                </ul>
+                <p><strong>Important:</strong> This data is only stored on your local device and is never uploaded to any server.</p>
+
+                <h2>2. Permissions Explanation</h2>
+                <p>This extension requests the following permissions, used solely for core functionality:</p>
+
+                <h3>2.1 storage</h3>
+                <p><strong>Purpose:</strong> Locally save user settings and configuration information on your device.</p>
+                <p><strong>Data Scope:</strong> Download folder name, fast mode settings, notification preferences, license information, etc.</p>
+
+                <h3>2.2 downloads</h3>
+                <p><strong>Purpose:</strong> Save processed images to your specified download folder.</p>
+                <p><strong>Data Scope:</strong> Only access download functionality, does not read your download history.</p>
+
+                <h3>2.3 tabs</h3>
+                <p><strong>Purpose:</strong> Interact with Canva web pages to execute automated processing workflows.</p>
+                <p><strong>Data Scope:</strong> Only access tabs under the Canva.com domain, does not access other websites.</p>
+
+                <h3>2.4 notifications</h3>
+                <p><strong>Purpose:</strong> Send you notifications about processing progress and completion status.</p>
+                <p><strong>Data Scope:</strong> Only sends local notifications, no data transmission involved.</p>
+
+                <h3>2.5 Host Permissions</h3>
+                <ul>
+                    <li><strong>*.canva.com</strong>: Access Canva website to perform background removal operations</li>
+                    <li><strong>tool.hcceo.com</strong>: Verify license status (only when you log in)</li>
+                    <li><strong>canva-license-server.onrender.com</strong>: Backup license verification server</li>
+                </ul>
+
+                <h2>3. Data Usage</h2>
+                <h3>3.1 Local Processing</h3>
+                <p>All image processing operations are performed on the Canva website. This extension only serves as an automation tool:</p>
+                <ul>
+                    <li>Does not upload your images to any third-party servers</li>
+                    <li>Does not analyze or store image content</li>
+                    <li>Only assists you in batch processing images on Canva</li>
+                </ul>
+
+                <h3>3.2 License Verification</h3>
+                <p>When you activate the Pro version, the extension will:</p>
+                <ul>
+                    <li>Send your email address to the license server to verify purchase</li>
+                    <li>Receive and locally store license status information</li>
+                    <li>Not share any other information about you</li>
+                </ul>
+
+                <h2>4. Data Sharing</h2>
+                <p><strong>We do not share your data with any third parties.</strong></p>
+                <ul>
+                    <li>Do not sell user data</li>
+                    <li>Do not share information with advertisers</li>
+                    <li>Do not provide data to analytics services</li>
+                </ul>
+
+                <h2>5. Data Security</h2>
+                <p>We take the following measures to protect your data security:</p>
+                <ul>
+                    <li>All locally stored data uses Chrome's secure storage API</li>
+                    <li>License verification uses HTTPS encrypted transmission</li>
+                    <li>No sensitive information is hardcoded in the code</li>
+                    <li>Regular extension updates to fix security vulnerabilities</li>
+                </ul>
+
+                <h2>6. User Rights</h2>
+                <p>You have the following rights:</p>
+                <ul>
+                    <li><strong>Access Right:</strong> You can view locally stored data by the extension at any time</li>
+                    <li><strong>Deletion Right:</strong> You can delete all local data by uninstalling the extension</li>
+                    <li><strong>Control Right:</strong> You can disable features like notifications in settings</li>
+                </ul>
+
+                <h2>7. Third-Party Services</h2>
+                <p>This extension interacts with the following third-party services:</p>
+                <ul>
+                    <li><strong>Canva.com:</strong> Image processing platform (subject to Canva's privacy policy)</li>
+                    <li><strong>Hengchuang AI Tools:</strong> License management service (only for purchase verification)</li>
+                </ul>
+
+                <h2>8. Children's Privacy</h2>
+                <p>This extension is not intended for children under 13, and we do not knowingly collect personal information from children.</p>
+
+                <h2>9. Privacy Policy Updates</h2>
+                <p>We may update this privacy policy from time to time. For significant changes, we will:</p>
+                <ul>
+                    <li>Display notifications in the extension</li>
+                    <li>Update the "Last Updated" date on this page</li>
+                    <li>Publish update notes through the extension store</li>
+                </ul>
+
+                <h2>10. Contact Us</h2>
+                <p>If you have any questions or suggestions about this privacy policy, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:hengchuang2025@126.com" class="contact-link">hengchuang2025@126.com</a></li>
+                    <li><strong>Website:</strong> <a href="http://tool.hcceo.com" class="contact-link" target="_blank">tool.hcceo.com</a></li>
+                </ul>
+
+                <div class="info-box">
+                    <p><strong>Transparency Commitment:</strong> We are committed to complete transparency. If you have any questions about how we handle data, please feel free to contact us.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Canva Bulk Background Remover Pro</p>
+            <p>Version 1.0.0 | Made with ❤️ by Hengchuang AI Tools Team</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // 隐藏所有语言内容
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // 移除所有tab的active状态
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // 显示选中的语言内容
+            document.getElementById(lang + '-content').classList.add('active');
+            
+            // 激活对应的tab
+            event.target.classList.add('active');
+            
+            // 保存语言偏好到localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // 页面加载时恢复用户的语言偏好
+        window.addEventListener('DOMContentLoaded', () => {
+            const preferredLang = localStorage.getItem('preferredLanguage');
+            if (preferredLang && preferredLang === 'en') {
+                // 如果用户之前选择了英文，切换到英文
+                document.getElementById('zh-content').classList.remove('active');
+                document.getElementById('en-content').classList.add('active');
+                document.querySelector('.tab.active').classList.remove('active');
+                document.querySelectorAll('.tab')[1].classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
