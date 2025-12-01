@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - Privacy Policy | AI词汇宝</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .lang-switch {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .lang-btn {
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            color: white;
+            padding: 8px 24px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        .lang-btn.active {
+            background: white;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 24px;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 18px;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .info-box {
+            background: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #2196f3;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .update-date {
+            color: #999;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        strong {
+            color: #764ba2;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 隐私政策 | Privacy Policy</h1>
+            <p>AI词汇宝 - AI Vocabulary Treasure</p>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('zh')">中文</button>
+                <button class="lang-btn" onclick="switchLang('en')">English</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- 中文版本 -->
+            <div id="zh-content" class="lang-content active">
+                <div class="update-date">
+                    <strong>最后更新日期：</strong>2025年11月
+                </div>
+
+                <h2>📋 隐私政策概述</h2>
+                <p>
+                    欢迎使用<strong>AI词汇宝</strong>（以下简称"本插件"或"我们"）。我们深知隐私对您的重要性，因此制定本隐私政策，向您说明我们如何收集、使用、存储和保护您的个人信息。
+                </p>
+                <div class="highlight">
+                    <strong>重要提示：</strong>本插件承诺将用户隐私保护放在首位，所有词汇数据均存储在您的本地设备中，我们不会收集、上传或分享您的学习数据。
+                </div>
+
+                <h2>1. 信息收集与使用</h2>
+                
+                <h3>1.1 我们收集的信息</h3>
+                <p>本插件可能收集以下类型的信息：</p>
+                <ul>
+                    <li><strong>词汇数据：</strong>您保存的单词、释义、分类等学习内容（完全存储在本地）</li>
+                    <li><strong>学习记录：</strong>学习进度、学习时间等统计数据（完全存储在本地）</li>
+                    <li><strong>用户设置：</strong>界面语言、主题模式、分类设置等偏好配置（完全存储在本地）</li>
+                    <li><strong>登录信息：</strong>如果您选择登录恒创AI工具平台，我们会存储您的登录令牌（Token）用于身份验证</li>
+                    <li><strong>权限信息：</strong>插件使用权限的验证信息</li>
+                </ul>
+
+                <h3>1.2 信息的使用目的</h3>
+                <ul>
+                    <li>提供词汇管理和学习功能</li>
+                    <li>保存您的学习进度和偏好设置</li>
+                    <li>验证用户身份和使用权限</li>
+                    <li>改进插件功能和用户体验</li>
+                </ul>
+
+                <h2>2. 数据存储与安全</h2>
+                
+                <h3>2.1 本地存储</h3>
+                <div class="info-box">
+                    <p><strong>核心承诺：</strong>您的所有词汇数据、学习记录和个人设置均通过Chrome浏览器的<code>chrome.storage</code> API存储在您的本地设备中，不会上传到任何服务器。</p>
+                </div>
+
+                <h3>2.2 数据安全措施</h3>
+                <ul>
+                    <li>使用Chrome官方存储API，确保数据安全性</li>
+                    <li>数据仅在您的设备上存储和处理</li>
+                    <li>支持数据导出功能，您可以随时备份您的数据</li>
+                    <li>卸载插件时，本地数据会被自动清除</li>
+                </ul>
+
+                <h2>3. 权限说明</h2>
+                <p>本插件需要以下Chrome浏览器权限以提供完整功能：</p>
+
+                <h3>3.1 storage（存储）</h3>
+                <p><strong>用途：</strong>在本地存储您的词汇数据、学习记录和设置信息。</p>
+                <p><strong>说明：</strong>这是插件核心功能所必需的权限，所有数据仅存储在您的设备上。</p>
+
+                <h3>3.2 contextMenus（右键菜单）</h3>
+                <p><strong>用途：</strong>在网页上选中文字后，通过右键菜单快速添加词汇。</p>
+                <p><strong>说明：</strong>仅在您主动使用右键菜单功能时触发。</p>
+
+                <h3>3.3 activeTab（活动标签页）</h3>
+                <p><strong>用途：</strong>获取当前网页中您选中的文字内容，用于添加词汇。</p>
+                <p><strong>说明：</strong>仅在您主动使用添加词汇功能时访问当前标签页内容。</p>
+
+                <h3>3.4 tabs（标签页）</h3>
+                <p><strong>用途：</strong>打开新标签页访问恒创AI工具平台进行登录或购买权限。</p>
+                <p><strong>说明：</strong>仅在您点击登录或购买按钮时使用。</p>
+
+                <h3>3.5 主机权限（&lt;all_urls&gt;）</h3>
+                <p><strong>用途：</strong>允许您在任何网页上使用词汇收集功能。</p>
+                <p><strong>说明：</strong>这是Chrome应用商店要求的标准权限声明格式。实际上，插件仅在您主动使用时才会访问网页内容，且仅获取您选中的文字。</p>
+
+                <h3>3.6 特定域名权限（tool.hcceo.com）</h3>
+                <p><strong>用途：</strong>与恒创AI工具平台通信，进行用户登录验证和权限检查。</p>
+                <p><strong>说明：</strong>仅用于身份认证和权限管理，不涉及词汇数据传输。</p>
+
+                <h2>4. 第三方服务</h2>
+
+                <h3>4.1 AI翻译服务（可选）</h3>
+                <p>如果您选择配置AI翻译功能，插件会调用您选择的第三方AI服务API：</p>
+                <ul>
+                    <li>Google翻译</li>
+                    <li>OpenAI (ChatGPT)</li>
+                    <li>Google Gemini</li>
+                    <li>DeepSeek AI</li>
+                    <li>Grok AI</li>
+                </ul>
+                <div class="highlight">
+                    <strong>重要说明：</strong>
+                    <ul>
+                        <li>您的API密钥存储在本地，不会发送到我们的服务器</li>
+                        <li>翻译请求直接发送到您选择的AI服务提供商</li>
+                        <li>请参阅各AI服务提供商的隐私政策了解详情</li>
+                        <li>使用AI服务可能产生费用，请查看各服务商的定价信息</li>
+                    </ul>
+                </div>
+
+                <h3>4.2 恒创AI工具平台</h3>
+                <p>用于用户登录验证和权限管理：</p>
+                <ul>
+                    <li><strong>平台地址：</strong><a href="http://tool.hcceo.com" target="_blank">http://tool.hcceo.com</a></li>
+                    <li><strong>用途：</strong>用户身份认证、权限验证</li>
+                    <li><strong>数据传输：</strong>仅传输登录令牌和权限验证信息，不涉及词汇数据</li>
+                </ul>
+
+                <h2>5. 数据分享与披露</h2>
+                <p><strong>我们承诺：</strong></p>
+                <ul>
+                    <li>不会出售、出租或交易您的个人信息</li>
+                    <li>不会与第三方分享您的词汇学习数据</li>
+                    <li>除非法律要求或经您明确同意，否则不会披露您的信息</li>
+                </ul>
+
+                <h2>6. 用户权利</h2>
+                <p>您对自己的数据拥有完全控制权：</p>
+                <ul>
+                    <li><strong>访问权：</strong>随时查看您存储的所有词汇和学习数据</li>
+                    <li><strong>导出权：</strong>支持将数据导出为CSV或TXT格式</li>
+                    <li><strong>删除权：</strong>可以删除单个词汇或清空所有数据</li>
+                    <li><strong>卸载权：</strong>卸载插件时，所有本地数据将被清除</li>
+                </ul>
+
+                <h2>7. Cookie和追踪技术</h2>
+                <p>本插件<strong>不使用</strong>Cookie或任何追踪技术来收集用户行为数据。</p>
+
+                <h2>8. 儿童隐私保护</h2>
+                <p>本插件适合所有年龄段用户使用。我们不会主动收集13岁以下儿童的个人信息。如果您是家长或监护人，发现您的孩子在未经许可的情况下向我们提供了个人信息，请联系我们。</p>
+
+                <h2>9. 隐私政策更新</h2>
+                <p>我们可能会不时更新本隐私政策。更新后的政策将在本页面发布，并更新"最后更新日期"。重大变更时，我们会通过插件内通知的方式告知您。</p>
+
+                <h2>10. 联系我们</h2>
+                <p>如果您对本隐私政策有任何疑问、意见或建议，请通过以下方式联系我们：</p>
+                <ul>
+                    <li><strong>官方网站：</strong><a href="http://tool.hcceo.com" target="_blank">http://tool.hcceo.com</a></li>
+                    <li><strong>插件详情页：</strong><a href="http://tool.hcceo.com/index.html#/tool-detail?id=50" target="_blank">AI词汇宝详情</a></li>
+                </ul>
+
+                <div class="info-box">
+                    <p><strong>感谢您信任AI词汇宝！</strong></p>
+                    <p>我们致力于保护您的隐私，为您提供安全、高效的词汇学习体验。</p>
+                </div>
+            </div>
+
+            <!-- 英文版本 -->
+            <div id="en-content" class="lang-content">
+                <div class="update-date">
+                    <strong>Last Updated:</strong> November 2025
+                </div>
+
+                <h2>📋 Privacy Policy Overview</h2>
+                <p>
+                    Welcome to <strong>AI Vocabulary Treasure</strong> (hereinafter referred to as "this extension" or "we"). We understand the importance of privacy to you, and therefore have established this privacy policy to explain how we collect, use, store, and protect your personal information.
+                </p>
+                <div class="highlight">
+                    <strong>Important Notice:</strong> This extension is committed to putting user privacy protection first. All vocabulary data is stored on your local device. We do not collect, upload, or share your learning data.
+                </div>
+
+                <h2>1. Information Collection and Use</h2>
+                
+                <h3>1.1 Information We Collect</h3>
+                <p>This extension may collect the following types of information:</p>
+                <ul>
+                    <li><strong>Vocabulary Data:</strong> Words, definitions, categories, and other learning content you save (completely stored locally)</li>
+                    <li><strong>Learning Records:</strong> Learning progress, study time, and other statistical data (completely stored locally)</li>
+                    <li><strong>User Settings:</strong> Interface language, theme mode, category settings, and other preference configurations (completely stored locally)</li>
+                    <li><strong>Login Information:</strong> If you choose to log in to the Hengchuang AI Tools platform, we will store your login token for authentication</li>
+                    <li><strong>Permission Information:</strong> Verification information for extension usage permissions</li>
+                </ul>
+
+                <h3>1.2 Purpose of Information Use</h3>
+                <ul>
+                    <li>Provide vocabulary management and learning features</li>
+                    <li>Save your learning progress and preference settings</li>
+                    <li>Verify user identity and usage permissions</li>
+                    <li>Improve extension features and user experience</li>
+                </ul>
+
+                <h2>2. Data Storage and Security</h2>
+                
+                <h3>2.1 Local Storage</h3>
+                <div class="info-box">
+                    <p><strong>Core Commitment:</strong> All your vocabulary data, learning records, and personal settings are stored on your local device through Chrome's <code>chrome.storage</code> API and will not be uploaded to any server.</p>
+                </div>
+
+                <h3>2.2 Data Security Measures</h3>
+                <ul>
+                    <li>Use Chrome's official storage API to ensure data security</li>
+                    <li>Data is only stored and processed on your device</li>
+                    <li>Support data export function, you can back up your data at any time</li>
+                    <li>Local data will be automatically cleared when the extension is uninstalled</li>
+                </ul>
+
+                <h2>3. Permission Descriptions</h2>
+                <p>This extension requires the following Chrome browser permissions to provide full functionality:</p>
+
+                <h3>3.1 storage</h3>
+                <p><strong>Purpose:</strong> Store your vocabulary data, learning records, and settings locally.</p>
+                <p><strong>Note:</strong> This is a necessary permission for the core functionality of the extension. All data is stored only on your device.</p>
+
+                <h3>3.2 contextMenus</h3>
+                <p><strong>Purpose:</strong> Quickly add vocabulary through the right-click menu after selecting text on a webpage.</p>
+                <p><strong>Note:</strong> Only triggered when you actively use the right-click menu function.</p>
+
+                <h3>3.3 activeTab</h3>
+                <p><strong>Purpose:</strong> Get the text content you selected on the current webpage for adding vocabulary.</p>
+                <p><strong>Note:</strong> Only accesses current tab content when you actively use the add vocabulary function.</p>
+
+                <h3>3.4 tabs</h3>
+                <p><strong>Purpose:</strong> Open a new tab to access the Hengchuang AI Tools platform for login or purchasing permissions.</p>
+                <p><strong>Note:</strong> Only used when you click the login or purchase button.</p>
+
+                <h3>3.5 Host Permissions (&lt;all_urls&gt;)</h3>
+                <p><strong>Purpose:</strong> Allow you to use vocabulary collection features on any webpage.</p>
+                <p><strong>Note:</strong> This is the standard permission declaration format required by the Chrome Web Store. In practice, the extension only accesses webpage content when you actively use it, and only retrieves the text you select.</p>
+
+                <h3>3.6 Specific Domain Permission (tool.hcceo.com)</h3>
+                <p><strong>Purpose:</strong> Communicate with the Hengchuang AI Tools platform for user login verification and permission checking.</p>
+                <p><strong>Note:</strong> Only used for identity authentication and permission management, does not involve vocabulary data transmission.</p>
+
+                <h2>4. Third-Party Services</h2>
+
+                <h3>4.1 AI Translation Services (Optional)</h3>
+                <p>If you choose to configure AI translation features, the extension will call the third-party AI service API you select:</p>
+                <ul>
+                    <li>Google Translate</li>
+                    <li>OpenAI (ChatGPT)</li>
+                    <li>Google Gemini</li>
+                    <li>DeepSeek AI</li>
+                    <li>Grok AI</li>
+                </ul>
+                <div class="highlight">
+                    <strong>Important Notes:</strong>
+                    <ul>
+                        <li>Your API keys are stored locally and will not be sent to our servers</li>
+                        <li>Translation requests are sent directly to your chosen AI service provider</li>
+                        <li>Please refer to each AI service provider's privacy policy for details</li>
+                        <li>Using AI services may incur costs, please check each provider's pricing information</li>
+                    </ul>
+                </div>
+
+                <h3>4.2 Hengchuang AI Tools Platform</h3>
+                <p>Used for user login verification and permission management:</p>
+                <ul>
+                    <li><strong>Platform URL:</strong><a href="http://tool.hcceo.com" target="_blank">http://tool.hcceo.com</a></li>
+                    <li><strong>Purpose:</strong> User authentication, permission verification</li>
+                    <li><strong>Data Transmission:</strong> Only transmits login tokens and permission verification information, does not involve vocabulary data</li>
+                </ul>
+
+                <h2>5. Data Sharing and Disclosure</h2>
+                <p><strong>We Promise:</strong></p>
+                <ul>
+                    <li>We will not sell, rent, or trade your personal information</li>
+                    <li>We will not share your vocabulary learning data with third parties</li>
+                    <li>We will not disclose your information unless required by law or with your explicit consent</li>
+                </ul>
+
+                <h2>6. User Rights</h2>
+                <p>You have complete control over your data:</p>
+                <ul>
+                    <li><strong>Access Right:</strong> View all your stored vocabulary and learning data at any time</li>
+                    <li><strong>Export Right:</strong> Export data in CSV or TXT format</li>
+                    <li><strong>Deletion Right:</strong> Delete individual vocabulary items or clear all data</li>
+                    <li><strong>Uninstall Right:</strong> All local data will be cleared when the extension is uninstalled</li>
+                </ul>
+
+                <h2>7. Cookies and Tracking Technologies</h2>
+                <p>This extension <strong>does not use</strong> cookies or any tracking technologies to collect user behavior data.</p>
+
+                <h2>8. Children's Privacy Protection</h2>
+                <p>This extension is suitable for users of all ages. We do not actively collect personal information from children under 13. If you are a parent or guardian and discover that your child has provided us with personal information without permission, please contact us.</p>
+
+                <h2>9. Privacy Policy Updates</h2>
+                <p>We may update this privacy policy from time to time. The updated policy will be posted on this page and the "Last Updated" date will be updated. For significant changes, we will notify you through in-extension notifications.</p>
+
+                <h2>10. Contact Us</h2>
+                <p>If you have any questions, comments, or suggestions about this privacy policy, please contact us through:</p>
+                <ul>
+                    <li><strong>Official Website:</strong><a href="http://tool.hcceo.com" target="_blank">http://tool.hcceo.com</a></li>
+                    <li><strong>Extension Details:</strong><a href="http://tool.hcceo.com/index.html#/tool-detail?id=50" target="_blank">AI Vocabulary Treasure Details</a></li>
+                </ul>
+
+                <div class="info-box">
+                    <p><strong>Thank you for trusting AI Vocabulary Treasure!</strong></p>
+                    <p>We are committed to protecting your privacy and providing you with a safe and efficient vocabulary learning experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 <a href="http://tool.hcceo.com" target="_blank">tool.hcceo.com</a> - All Rights Reserved</p>
+            <p>AI词汇宝 | AI Vocabulary Treasure v1.0.0</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // 隐藏所有语言内容
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // 移除所有按钮的active状态
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // 显示选中的语言内容
+            document.getElementById(lang + '-content').classList.add('active');
+            
+            // 激活对应的按钮
+            event.target.classList.add('active');
+            
+            // 更新页面语言属性
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+            
+            // 保存用户选择
+            localStorage.setItem('preferredLang', lang);
+        }
+        
+        // 页面加载时恢复用户上次选择的语言
+        window.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferredLang') || 'zh';
+            if (savedLang === 'en') {
+                document.querySelectorAll('.lang-btn')[1].click();
+            }
+        });
+    </script>
+</body>
+</html>
