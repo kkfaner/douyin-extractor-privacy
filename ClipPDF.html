@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私权政策 - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .language-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 16px 24px;
+            background: transparent;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: #6c757d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .tab-btn:hover {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+        }
+
+        .tab-btn.active {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #667eea;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #495057;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #495057;
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #495057;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-left: 4px solid #667eea;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 24px 30px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 14px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        strong {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .update-date {
+            color: #6c757d;
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .content {
+                padding: 24px 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .tab-btn {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>隐私权政策 Privacy Policy</h1>
+            <p>在线PDF转换工具 - Online PDF Converter Tool</p>
+        </div>
+
+        <div class="language-tabs">
+            <button class="tab-btn active" onclick="switchLanguage('zh')">
+                🇨🇳 中文
+            </button>
+            <button class="tab-btn" onclick="switchLanguage('en')">
+                🇺🇸 English
+            </button>
+        </div>
+
+        <div class="content">
+            <!-- 中文内容 -->
+            <div class="lang-content active" id="zh-content">
+                <p class="update-date">最后更新日期: 2024年12月2日</p>
+
+                <div class="highlight-box">
+                    <p><strong>核心承诺:</strong> 我们承诺所有PDF处理操作均在您的本地设备上完成,您的文档内容不会被上传到任何服务器。我们高度重视您的隐私安全。</p>
+                </div>
+
+                <h2>1. 信息收集</h2>
+                
+                <h3>1.1 我们收集的信息</h3>
+                <p>本扩展仅收集以下必要信息:</p>
+                <ul>
+                    <li><strong>用户账户信息:</strong> 当您选择登录恒创AI工具网站时,我们会存储您的用户ID、用户名和邮箱地址,用于身份验证和权限管理。</li>
+                    <li><strong>权限状态信息:</strong> 您的插件购买状态、使用期限等权限相关信息,用于功能访问控制。</li>
+                    <li><strong>偏好设置:</strong> 您的主题选择(日间/夜间模式)等个性化设置。</li>
+                    <li><strong>临时操作数据:</strong> 待处理的操作缓存,确保页面刷新后不丢失工作进度。</li>
+                </ul>
+
+                <h3>1.2 我们不收集的信息</h3>
+                <ul>
+                    <li>❌ 您上传或处理的PDF文档内容</li>
+                    <li>❌ 您的浏览历史记录</li>
+                    <li>❌ 您访问的网页内容(除非您主动使用截图功能)</li>
+                    <li>❌ 任何个人敏感信息</li>
+                </ul>
+
+                <h2>2. 信息使用</h2>
+                <p>我们收集的信息仅用于以下目的:</p>
+                <ul>
+                    <li><strong>身份验证:</strong> 验证您的登录状态和使用权限</li>
+                    <li><strong>功能实现:</strong> 保存您的偏好设置,提供个性化体验</li>
+                    <li><strong>权限管理:</strong> 根据您的购买状态控制功能访问</li>
+                    <li><strong>状态通知:</strong> 在权限即将过期时提醒您</li>
+                </ul>
+
+                <h2>3. 数据存储</h2>
+                
+                <h3>3.1 本地存储</h3>
+                <p>所有数据均使用Chrome浏览器的本地存储API(chrome.storage.local)保存在您的设备上,包括:</p>
+                <ul>
+                    <li>用户登录凭证(token)</li>
+                    <li>用户基本信息</li>
+                    <li>权限状态数据</li>
+                    <li>主题偏好设置</li>
+                    <li>临时操作缓存</li>
+                </ul>
+
+                <h3>3.2 文档处理</h3>
+                <div class="highlight-box">
+                    <p><strong>重要:</strong> 您上传和处理的所有PDF文档完全在浏览器本地处理,使用JavaScript和WebAssembly技术。文档内容不会离开您的设备,不会上传到任何服务器。</p>
+                </div>
+
+                <h2>4. 权限说明</h2>
+                <p>本扩展请求以下浏览器权限,并说明其用途:</p>
+                
+                <h3>4.1 activeTab (活动标签页)</h3>
+                <p>用于访问当前活动标签页的内容,仅在您主动使用"捕获屏幕"、"添加当前PDF"等功能时使用。</p>
+
+                <h3>4.2 scripting (脚本注入)</h3>
+                <p>用于在网页中注入必要的脚本,实现PDF检测、页面截图、裁剪工具等功能。仅在您主动触发相关功能时执行。</p>
+
+                <h3>4.3 contextMenus (右键菜单)</h3>
+                <p>用于在浏览器右键菜单中添加快捷操作选项,方便您快速使用扩展功能。</p>
+
+                <h3>4.4 storage (本地存储)</h3>
+                <p>用于在您的设备上保存偏好设置、登录状态等数据。所有数据仅保存在本地,不会同步到云端。</p>
+
+                <h3>4.5 tabs (标签页管理)</h3>
+                <p>用于创建和管理工作区标签页,实现页面截图功能,以及在标签页间传递消息。</p>
+
+                <h3>4.6 notifications (通知)</h3>
+                <p>用于在权限状态变化时向您发送重要通知,如权限即将过期提醒。</p>
+
+                <h3>4.7 主机权限 (http://tool.hcceo.com/*)</h3>
+                <p>用于与恒创AI工具网站的认证系统通信,实现用户登录验证和权限检查。仅访问该特定域名。</p>
+
+                <h2>5. 第三方服务</h2>
+                
+                <h3>5.1 认证服务</h3>
+                <p>本扩展使用恒创AI工具网站(tool.hcceo.com)提供的认证服务进行用户登录和权限管理。当您选择登录时,您的登录信息将通过该网站的安全通道传输。</p>
+
+                <h3>5.2 无其他第三方服务</h3>
+                <p>除认证服务外,本扩展不使用任何其他第三方服务、分析工具或广告网络。</p>
+
+                <h2>6. 数据安全</h2>
+                <p>我们采取以下措施保护您的数据安全:</p>
+                <ul>
+                    <li><strong>本地处理:</strong> 所有文档处理操作在本地完成,不上传到服务器</li>
+                    <li><strong>加密传输:</strong> 与认证服务器的通信使用HTTPS加密</li>
+                    <li><strong>最小权限:</strong> 仅请求实现功能所必需的最小权限</li>
+                    <li><strong>无数据收集:</strong> 不收集任何文档内容或浏览行为数据</li>
+                </ul>
+
+                <h2>7. 用户权利</h2>
+                <p>您拥有以下权利:</p>
+                <ul>
+                    <li><strong>访问权:</strong> 您可以随时查看扩展存储的数据(通过浏览器开发者工具)</li>
+                    <li><strong>删除权:</strong> 您可以随时清除扩展存储的所有数据,或卸载扩展</li>
+                    <li><strong>退出权:</strong> 您可以随时退出登录,清除账户信息</li>
+                    <li><strong>选择权:</strong> 您可以选择不登录,使用扩展的基本功能</li>
+                </ul>
+
+                <h2>8. 儿童隐私</h2>
+                <p>本扩展不专门针对13岁以下的儿童。我们不会故意收集儿童的个人信息。如果您是家长或监护人,发现您的孩子向我们提供了个人信息,请联系我们。</p>
+
+                <h2>9. 隐私政策更新</h2>
+                <p>我们可能会不时更新本隐私政策。更新后的政策将在本页面发布,并更新"最后更新日期"。重大变更时,我们会通过扩展内通知的方式告知您。</p>
+
+                <h2>10. 联系我们</h2>
+                <p>如果您对本隐私政策有任何疑问或建议,请通过以下方式联系我们:</p>
+                <ul>
+                    <li>网站: <a href="http://tool.hcceo.com" target="_blank" style="color: #667eea;">http://tool.hcceo.com</a></li>
+                    <li>邮箱: 通过恒创AI工具网站联系我们</li>
+                </ul>
+
+                <div class="highlight-box" style="margin-top: 32px;">
+                    <p><strong>再次承诺:</strong> 您的隐私和数据安全是我们的首要任务。我们承诺永远不会出售、出租或以其他方式分享您的个人信息给第三方(认证服务除外)。所有PDF处理操作均在本地完成,您的文档内容完全由您掌控。</p>
+                </div>
+            </div>
+
+            <!-- English Content -->
+            <div class="lang-content" id="en-content">
+                <p class="update-date">Last Updated: December 2, 2024</p>
+
+                <div class="highlight-box">
+                    <p><strong>Core Commitment:</strong> We promise that all PDF processing operations are completed on your local device. Your document content will not be uploaded to any server. We highly value your privacy and security.</p>
+                </div>
+
+                <h2>1. Information Collection</h2>
+                
+                <h3>1.1 Information We Collect</h3>
+                <p>This extension only collects the following necessary information:</p>
+                <ul>
+                    <li><strong>User Account Information:</strong> When you choose to log in to the Hengchuang AI Tools website, we store your user ID, username, and email address for authentication and permission management.</li>
+                    <li><strong>Permission Status Information:</strong> Your plugin purchase status, usage period, and other permission-related information for feature access control.</li>
+                    <li><strong>Preference Settings:</strong> Your personalized settings such as theme selection (day/night mode).</li>
+                    <li><strong>Temporary Operation Data:</strong> Cached pending operations to ensure work progress is not lost after page refresh.</li>
+                </ul>
+
+                <h3>1.2 Information We Do Not Collect</h3>
+                <ul>
+                    <li>❌ Content of PDF documents you upload or process</li>
+                    <li>❌ Your browsing history</li>
+                    <li>❌ Content of web pages you visit (unless you actively use screenshot features)</li>
+                    <li>❌ Any personally sensitive information</li>
+                </ul>
+
+                <h2>2. Information Usage</h2>
+                <p>The information we collect is only used for the following purposes:</p>
+                <ul>
+                    <li><strong>Authentication:</strong> Verify your login status and usage permissions</li>
+                    <li><strong>Feature Implementation:</strong> Save your preference settings and provide personalized experience</li>
+                    <li><strong>Permission Management:</strong> Control feature access based on your purchase status</li>
+                    <li><strong>Status Notifications:</strong> Remind you when permissions are about to expire</li>
+                </ul>
+
+                <h2>3. Data Storage</h2>
+                
+                <h3>3.1 Local Storage</h3>
+                <p>All data is saved on your device using Chrome browser's local storage API (chrome.storage.local), including:</p>
+                <ul>
+                    <li>User login credentials (token)</li>
+                    <li>User basic information</li>
+                    <li>Permission status data</li>
+                    <li>Theme preference settings</li>
+                    <li>Temporary operation cache</li>
+                </ul>
+
+                <h3>3.2 Document Processing</h3>
+                <div class="highlight-box">
+                    <p><strong>Important:</strong> All PDF documents you upload and process are completely processed locally in the browser using JavaScript and WebAssembly technologies. Document content never leaves your device and is not uploaded to any server.</p>
+                </div>
+
+                <h2>4. Permission Explanation</h2>
+                <p>This extension requests the following browser permissions with their purposes explained:</p>
+                
+                <h3>4.1 activeTab (Active Tab)</h3>
+                <p>Used to access the content of the currently active tab, only when you actively use features like "Capture Screen" or "Add Current PDF".</p>
+
+                <h3>4.2 scripting (Script Injection)</h3>
+                <p>Used to inject necessary scripts into web pages to implement PDF detection, page screenshots, cropping tools, and other features. Only executes when you actively trigger related functions.</p>
+
+                <h3>4.3 contextMenus (Context Menus)</h3>
+                <p>Used to add quick action options to the browser's context menu for convenient access to extension features.</p>
+
+                <h3>4.4 storage (Local Storage)</h3>
+                <p>Used to save preference settings, login status, and other data on your device. All data is only saved locally and not synced to the cloud.</p>
+
+                <h3>4.5 tabs (Tab Management)</h3>
+                <p>Used to create and manage workspace tabs, implement page screenshot functionality, and pass messages between tabs.</p>
+
+                <h3>4.6 notifications (Notifications)</h3>
+                <p>Used to send important notifications when permission status changes, such as reminders when permissions are about to expire.</p>
+
+                <h3>4.7 Host Permission (http://tool.hcceo.com/*)</h3>
+                <p>Used to communicate with the Hengchuang AI Tools website's authentication system for user login verification and permission checking. Only accesses this specific domain.</p>
+
+                <h2>5. Third-Party Services</h2>
+                
+                <h3>5.1 Authentication Service</h3>
+                <p>This extension uses the authentication service provided by the Hengchuang AI Tools website (tool.hcceo.com) for user login and permission management. When you choose to log in, your login information is transmitted through the website's secure channel.</p>
+
+                <h3>5.2 No Other Third-Party Services</h3>
+                <p>Except for the authentication service, this extension does not use any other third-party services, analytics tools, or advertising networks.</p>
+
+                <h2>6. Data Security</h2>
+                <p>We take the following measures to protect your data security:</p>
+                <ul>
+                    <li><strong>Local Processing:</strong> All document processing operations are completed locally without uploading to servers</li>
+                    <li><strong>Encrypted Transmission:</strong> Communication with authentication servers uses HTTPS encryption</li>
+                    <li><strong>Minimum Permissions:</strong> Only requests the minimum permissions necessary to implement features</li>
+                    <li><strong>No Data Collection:</strong> Does not collect any document content or browsing behavior data</li>
+                </ul>
+
+                <h2>7. User Rights</h2>
+                <p>You have the following rights:</p>
+                <ul>
+                    <li><strong>Access Right:</strong> You can view data stored by the extension at any time (via browser developer tools)</li>
+                    <li><strong>Deletion Right:</strong> You can clear all data stored by the extension at any time or uninstall the extension</li>
+                    <li><strong>Logout Right:</strong> You can log out at any time to clear account information</li>
+                    <li><strong>Choice Right:</strong> You can choose not to log in and use the basic features of the extension</li>
+                </ul>
+
+                <h2>8. Children's Privacy</h2>
+                <p>This extension is not specifically targeted at children under 13 years old. We do not knowingly collect personal information from children. If you are a parent or guardian and discover that your child has provided us with personal information, please contact us.</p>
+
+                <h2>9. Privacy Policy Updates</h2>
+                <p>We may update this privacy policy from time to time. The updated policy will be published on this page with an updated "Last Updated" date. For significant changes, we will notify you through in-extension notifications.</p>
+
+                <h2>10. Contact Us</h2>
+                <p>If you have any questions or suggestions about this privacy policy, please contact us through:</p>
+                <ul>
+                    <li>Website: <a href="http://tool.hcceo.com" target="_blank" style="color: #667eea;">http://tool.hcceo.com</a></li>
+                    <li>Email: Contact us through the Hengchuang AI Tools website</li>
+                </ul>
+
+                <div class="highlight-box" style="margin-top: 32px;">
+                    <p><strong>Commitment Again:</strong> Your privacy and data security are our top priorities. We promise to never sell, rent, or otherwise share your personal information with third parties (except for authentication services). All PDF processing operations are completed locally, and your document content is completely under your control.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 在线PDF转换工具 | Online PDF Converter Tool</p>
+            <p style="margin-top: 8px;">All rights reserved. | 保留所有权利</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // 移除所有active类
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // 添加active类到选中的标签和内容
+            event.target.classList.add('active');
+            document.getElementById(lang + '-content').classList.add('active');
+
+            // 更新HTML lang属性
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+        }
+
+        // 页面加载时检测浏览器语言
+        document.addEventListener('DOMContentLoaded', function() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('en')) {
+                // 如果是英文浏览器，自动切换到英文
+                const enBtn = document.querySelectorAll('.tab-btn')[1];
+                enBtn.click();
+            }
+        });
+    </script>
+</body>
+</html>
