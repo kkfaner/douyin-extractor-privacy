@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Sidebar Notebook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 50px 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            padding: 4px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .lang-btn {
+            padding: 10px 30px;
+            border: none;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            border-radius: 26px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: white;
+            color: #667eea;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #1a202c;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #e2e8f0;
+            font-weight: 600;
+        }
+
+        .section h3 {
+            font-size: 18px;
+            color: #2d3748;
+            margin: 24px 0 12px 0;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 16px;
+            color: #4a5568;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .section ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .section li {
+            margin-bottom: 12px;
+            color: #4a5568;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 20px 24px;
+            margin: 24px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #2d3748;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 24px 0;
+        }
+
+        .info-card {
+            background: #f8f9fa;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+        }
+
+        .info-card h4 {
+            font-size: 16px;
+            color: #1a202c;
+            margin-bottom: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #4a5568;
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            text-align: center;
+            color: #718096;
+            font-size: 14px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .footer p {
+            margin: 8px 0;
+        }
+
+        .update-date {
+            display: inline-block;
+            background: #e2e8f0;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #4a5568;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 40px 24px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .content {
+                padding: 30px 24px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Privacy Policy</h1>
+            <p>隐私权政策</p>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('zh')">中文</button>
+                <button class="lang-btn" onclick="switchLang('en')">English</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- 中文内容 -->
+            <div class="lang-content active" id="zh-content">
+                <div class="section">
+                    <h2>📌 概述</h2>
+                    <p>欢迎使用侧边栏在线网页笔记本（以下简称"本扩展"）。我们非常重视您的隐私保护，本隐私政策将详细说明我们如何收集、使用、存储和保护您的信息。</p>
+                    <div class="highlight-box">
+                        <p><strong>核心承诺：</strong>您的所有笔记数据均存储在本地浏览器中，我们不会上传、收集或共享您的笔记内容。</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>🔐 我们收集的信息</h2>
+                    
+                    <h3>1. 本地存储的数据</h3>
+                    <p>以下数据仅存储在您的本地浏览器中，不会上传到任何服务器：</p>
+                    <ul>
+                        <li><strong>笔记内容：</strong>您创建的所有笔记的标题、正文内容、创建时间和修改时间</li>
+                        <li><strong>组织结构：</strong>文件夹分类、标签信息</li>
+                        <li><strong>个性化设置：</strong>主题偏好（深色/浅色模式）</li>
+                    </ul>
+
+                    <h3>2. 账号相关信息</h3>
+                    <p>如果您选择登录恒创AI工具网站账号，我们会存储：</p>
+                    <ul>
+                        <li><strong>登录凭证：</strong>用于维持登录状态的Token</li>
+                        <li><strong>用户信息：</strong>用户名、用户ID</li>
+                        <li><strong>权限信息：</strong>订阅状态（免费版/付费版）</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>💾 数据存储方式</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4><span class="icon">💻</span> 本地存储</h4>
+                            <p>所有笔记数据使用Chrome浏览器的storage API存储在您的本地设备中</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><span class="icon">🔒</span> 数据加密</h4>
+                            <p>浏览器会自动对本地存储的数据进行加密保护</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><span class="icon">🚫</span> 不上传云端</h4>
+                            <p>您的笔记内容永远不会被上传到任何远程服务器</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><span class="icon">✅</span> 完全控制</h4>
+                            <p>您可以随时导出或删除所有数据</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>🌐 网络请求说明</h2>
+                    <p>本扩展仅在以下情况下会访问远程服务器：</p>
+                    <ul>
+                        <li><strong>用户登录验证：</strong>当您主动选择登录时，会访问 http://tool.hcceo.com 进行身份验证</li>
+                        <li><strong>权限查询：</strong>定期同步您的订阅状态和权限信息</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>重要提示：</strong>这些网络请求仅用于账号认证和权限管理，不会传输您的任何笔记内容。</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>🛡️ 数据安全保护</h2>
+                    <p>我们采取以下措施保护您的数据安全：</p>
+                    <ul>
+                        <li>所有数据存储在本地，不经过第三方服务器</li>
+                        <li>不使用任何数据分析或追踪工具</li>
+                        <li>不收集用户浏览历史或行为数据</li>
+                        <li>不与任何第三方共享用户数据</li>
+                        <li>开源透明，代码可审查</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>🔑 权限说明</h2>
+                    <p>本扩展申请的Chrome权限及其用途：</p>
+                    <ul>
+                        <li><strong>storage：</strong>用于在本地浏览器中存储笔记数据和设置</li>
+                        <li><strong>sidePanel：</strong>用于在浏览器侧边栏中显示笔记界面</li>
+                        <li><strong>http://tool.hcceo.com/*：</strong>仅用于用户登录验证和权限查询</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>👤 您的权利</h2>
+                    <p>您对自己的数据拥有完全控制权：</p>
+                    <ul>
+                        <li><strong>查看数据：</strong>随时查看所有存储的笔记和设置</li>
+                        <li><strong>导出数据：</strong>使用导出功能将所有笔记导出为JSON文件</li>
+                        <li><strong>删除数据：</strong>可以删除单个笔记或卸载扩展以清除所有数据</li>
+                        <li><strong>注销账号：</strong>随时可以退出登录，清除账号信息</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>🔄 政策更新</h2>
+                    <p>我们可能会不定期更新本隐私政策。任何重大变更都会通过扩展更新说明通知您。建议您定期查看本政策以了解最新信息。</p>
+                </div>
+
+                <div class="section">
+                    <h2>📧 联系我们</h2>
+                    <p>如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
+                    <ul>
+                        <li><strong>网站：</strong>http://tool.hcceo.com</li>
+                        <li><strong>邮箱：</strong>hengchuang2025@126.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 英文内容 -->
+            <div class="lang-content" id="en-content">
+                <div class="section">
+                    <h2>📌 Overview</h2>
+                    <p>Welcome to Sidebar Online Web Notebook (hereinafter referred to as "this extension"). We take your privacy very seriously. This privacy policy explains in detail how we collect, use, store, and protect your information.</p>
+                    <div class="highlight-box">
+                        <p><strong>Core Commitment:</strong> All your note data is stored locally in your browser. We do not upload, collect, or share your note content.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>🔐 Information We Collect</h2>
+                    
+                    <h3>1. Locally Stored Data</h3>
+                    <p>The following data is stored only in your local browser and is not uploaded to any server:</p>
+                    <ul>
+                        <li><strong>Note Content:</strong> Titles, body content, creation time, and modification time of all notes you create</li>
+                        <li><strong>Organization Structure:</strong> Folder categories and tag information</li>
+                        <li><strong>Personalization Settings:</strong> Theme preferences (dark/light mode)</li>
+                    </ul>
+
+                    <h3>2. Account-Related Information</h3>
+                    <p>If you choose to log in with your Hengchuang AI Tools account, we will store:</p>
+                    <ul>
+                        <li><strong>Login Credentials:</strong> Token to maintain login status</li>
+                        <li><strong>User Information:</strong> Username and User ID</li>
+                        <li><strong>Permission Information:</strong> Subscription status (Free/Pro version)</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>💾 Data Storage Method</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4><span class="icon">💻</span> Local Storage</h4>
+                            <p>All note data is stored on your local device using Chrome's storage API</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><span class="icon">🔒</span> Data Encryption</h4>
+                            <p>The browser automatically encrypts locally stored data</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><span class="icon">🚫</span> No Cloud Upload</h4>
+                            <p>Your note content is never uploaded to any remote server</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><span class="icon">✅</span> Full Control</h4>
+                            <p>You can export or delete all data at any time</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>🌐 Network Requests</h2>
+                    <p>This extension only accesses remote servers in the following cases:</p>
+                    <ul>
+                        <li><strong>User Login Verification:</strong> When you actively choose to log in, it will access http://tool.hcceo.com for authentication</li>
+                        <li><strong>Permission Query:</strong> Periodically sync your subscription status and permission information</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>Important Note:</strong> These network requests are only for account authentication and permission management, and do not transmit any of your note content.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>🛡️ Data Security Protection</h2>
+                    <p>We take the following measures to protect your data security:</p>
+                    <ul>
+                        <li>All data is stored locally and does not go through third-party servers</li>
+                        <li>No data analytics or tracking tools are used</li>
+                        <li>No collection of user browsing history or behavior data</li>
+                        <li>No sharing of user data with any third parties</li>
+                        <li>Open source and transparent, code can be reviewed</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>🔑 Permission Explanation</h2>
+                    <p>Chrome permissions requested by this extension and their purposes:</p>
+                    <ul>
+                        <li><strong>storage:</strong> Used to store note data and settings in the local browser</li>
+                        <li><strong>sidePanel:</strong> Used to display the note interface in the browser sidebar</li>
+                        <li><strong>http://tool.hcceo.com/*:</strong> Only for user login verification and permission query</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>👤 Your Rights</h2>
+                    <p>You have full control over your data:</p>
+                    <ul>
+                        <li><strong>View Data:</strong> View all stored notes and settings at any time</li>
+                        <li><strong>Export Data:</strong> Use the export function to export all notes as JSON files</li>
+                        <li><strong>Delete Data:</strong> Delete individual notes or uninstall the extension to clear all data</li>
+                        <li><strong>Logout:</strong> Log out at any time to clear account information</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>🔄 Policy Updates</h2>
+                    <p>We may update this privacy policy from time to time. Any significant changes will be notified through extension update notes. We recommend that you review this policy regularly for the latest information.</p>
+                </div>
+
+                <div class="section">
+                    <h2>📧 Contact Us</h2>
+                    <p>If you have any questions or suggestions about this privacy policy, please contact us:</p>
+                    <ul>
+                        <li><strong>Website:</strong> http://tool.hcceo.com</li>
+                        <li><strong>Email:</strong> hengchuang2025@126.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>侧边栏在线网页笔记本 | Sidebar Online Web Notebook</strong></p>
+            <p>我们致力于保护您的隐私和数据安全</p>
+            <span class="update-date">最后更新 Last Updated: 2025-12-03</span>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // 更新按钮状态
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // 切换内容
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(lang + '-content').classList.add('active');
+
+            // 更新HTML lang属性
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+        }
+    </script>
+</body>
+</html>
